@@ -7,10 +7,38 @@
  	],
  	"require": {
 		"php": ">=5.4",
-		"johnpbloch/wordpress": "4.5.*",
-		"wpackagist-plugin/posts-to-posts": "1.4.x"
+		"johnpbloch/wordpress": "5.0.*",
+		"wpackagist-plugin/amp": "1.0.2",
+		"wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.*",
+		"wpackagist-plugin/hyperdb": "1.5",
+		"wpackagist-plugin/redirection": "3.7.*",
+		"wpackagist-plugin/wordpress-seo": "9.5.*",
+		"wpackagist-theme/twentynineteen": "1.2.*"
+	},
+	"require-dev": {
+		"wpackagist-plugin/pco-kint": "1.*",
+		"wpackagist-plugin/query-monitor": "3.*",
+		"phpunit/phpunit": "4.*"
+
 	},
 	"extra": {
+		"installer-paths": {
+			"wp-content/mu-plugins/{$name}/": [ "type:wordpress-muplugin" ],
+			"wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+			"wp-content/themes/{$name}/": ["type:wordpress-theme"]
+		},
 		"wordpress-install-dir": "wp"
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"echo Moving dropins to wp-content",
+			"cp wp-content/plugins/hyperdb/db.php wp-content/db.php",
+			"cp wp-content/plugins/hyperdb/db-config.php wp-content/db-config.php"
+		],
+		"post-install-cmd": [
+			"echo Moving dropins to wp-content",
+			"cp wp-content/plugins/hyperdb/db.php wp-content/db.php",
+			"cp wp-content/plugins/hyperdb/db-config.php wp-content/db-config.php"
+		]
 	}
 }
