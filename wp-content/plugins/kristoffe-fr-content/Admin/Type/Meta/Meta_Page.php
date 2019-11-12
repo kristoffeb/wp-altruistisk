@@ -23,7 +23,7 @@ abstract class Meta_Page {
 		$data = [
 			'id'           => 'box', // Ids will be unique thanks to prefix setting in Meta_Box
 			'title'        => $title,
-			'object_types' => [ 'page' ],
+			'object_types' => [ 'page', 'project' ],
 			'show_on_cb'   => [ $this, 'display_box_on_condition' ],
 		];
 

@@ -11,6 +11,6 @@ class Bootstrap {
 	}
 
 	public function init() {
-		// new Type\Campaign();
+		new Type\Project();
 	}
 }

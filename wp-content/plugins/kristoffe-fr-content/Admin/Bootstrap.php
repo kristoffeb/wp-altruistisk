@@ -2,8 +2,6 @@
 
 namespace Kristoffe\Content\Admin;
 
-use Kristoffe\Content\Admin\Settings;
-
 class Bootstrap {
 
 	public function __construct() {
