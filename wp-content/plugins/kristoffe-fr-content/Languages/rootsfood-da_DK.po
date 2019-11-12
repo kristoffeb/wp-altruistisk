@@ -1,0 +1,774 @@
+# Copyright (C) 2015 WebDevStudios
+# This file is distributed under the same license as the CMB2 package.
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Roots Food\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/cmb2\n"
+"POT-Creation-Date: 2017-12-28 01:12+0100\n"
+"PO-Revision-Date: 2017-12-29 02:09+0100\n"
+"Last-Translator: Kristoffe Biglete <kristoffe@coloursmove.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Admin/Helpers/Custom_Post_Type.php:408
+#: Admin/Helpers/Custom_Post_Type.php:409
+#: Admin/Helpers/Custom_Post_Type.php:410
+#: Admin/Helpers/Custom_Post_Type.php:411
+#: Admin/Helpers/Custom_Post_Type.php:506
+#: Admin/Helpers/Custom_Post_Type.php:507
+#: Admin/Helpers/Custom_Post_Type.php:508
+#: Admin/Helpers/Custom_Post_Type.php:639
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:412
+msgid "Add New"
+msgstr "Ajouter"
+
+#: Admin/Helpers/Custom_Post_Type.php:413
+#: Admin/Helpers/Custom_Post_Type.php:513
+#, php-format
+msgid "Add New %s"
+msgstr "Ajouter un nouveau %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:414
+#: Admin/Helpers/Custom_Post_Type.php:510
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:415
+#, php-format
+msgid "New %s"
+msgstr "Nouveau %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:416
+#: Admin/Helpers/Custom_Post_Type.php:511
+#, php-format
+msgid "View %s"
+msgstr "Voir %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:417
+#: Admin/Helpers/Custom_Post_Type.php:517
+#, php-format
+msgid "Search %s"
+msgstr "Chercher %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:418
+#: Admin/Helpers/Custom_Post_Type.php:522
+#, php-format
+msgid "No %s found"
+msgstr "Aucun résultat pour %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:419
+#, php-format
+msgid "No %s found in Trash"
+msgstr "Aucun résultat pour %s dans la corbeille"
+
+#: Admin/Helpers/Custom_Post_Type.php:420
+#: Admin/Helpers/Custom_Post_Type.php:516
+#, php-format
+msgid "Parent %s:"
+msgstr "%s parent:"
+
+#: Admin/Helpers/Custom_Post_Type.php:509
+#, php-format
+msgid "All %s"
+msgstr "Tous les %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:512
+#, php-format
+msgid "Update %s"
+msgstr "Modifier %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:514
+#, php-format
+msgid "New %s Name"
+msgstr "Nouveau nom pour %s"
+
+#: Admin/Helpers/Custom_Post_Type.php:515
+#, php-format
+msgid "Parent %s"
+msgstr "%s parent"
+
+#: Admin/Helpers/Custom_Post_Type.php:518
+#, php-format
+msgid "Popular %s"
+msgstr "%s populaires"
+
+#: Admin/Helpers/Custom_Post_Type.php:519
+#, php-format
+msgid "Seperate %s with commas"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:520
+#, php-format
+msgid "Add or remove %s"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:521
+#, php-format
+msgid "Choose from most used %s"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:715
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:842
+#, php-format
+msgid "Show all %s"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1064
+#: Admin/Helpers/Custom_Post_Type.php:1067
+#: Admin/Helpers/Custom_Post_Type.php:1070
+#, php-format
+msgid "%s updated."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1065
+msgid "Custom field updated."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1066
+msgid "Custom field deleted."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1068
+#, php-format
+msgid "%2$s restored to revision from %1$s"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1071
+#, php-format
+msgid "%s saved."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1072
+#, php-format
+msgid "%s submitted."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1074
+#, php-format
+msgid "%2$s scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1075
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1078
+#, php-format
+msgid "%s draft updated."
+msgstr ""
+
+#: Admin/Helpers/Custom_Post_Type.php:1097
+#: Admin/Helpers/Custom_Post_Type.php:1099
+#: Admin/Helpers/Custom_Post_Type.php:1101
+#: Admin/Helpers/Custom_Post_Type.php:1103
+#: Admin/Helpers/Custom_Post_Type.php:1105
+#, php-format
+msgid "%s "
+msgid_plural "%s "
+msgstr[0] ""
+msgstr[1] ""
+
+#: Admin/Helpers/Utility.php:11
+msgid "Curry"
+msgstr ""
+
+#: Admin/Helpers/Utility.php:12
+msgid "Mint"
+msgstr ""
+
+#: Admin/Helpers/Utility.php:13
+msgid "Plum"
+msgstr ""
+
+#: Admin/Helpers/Utility.php:14
+msgid "Rose"
+msgstr ""
+
+#: Admin/Settings/Optin.php:20 Admin/Type/Meta/About.php:121
+#: Admin/Type/Meta/About.php:135 Admin/Type/Meta/About.php:209
+#: Admin/Type/Meta/About.php:223 Admin/Type/Meta/Blog.php:43
+#: Admin/Type/Meta/Frontpage.php:84 Admin/Type/Meta/Moringa.php:58
+#: Admin/Type/Meta/Moringa.php:80 Admin/Type/Meta/Moringa.php:94
+#: Admin/Type/Meta/Moringa.php:116
+msgid "Title"
+msgstr ""
+
+#: Admin/Settings/Optin.php:26
+msgid "Input Placeholder"
+msgstr ""
+
+#: Admin/Settings/Optin.php:32
+msgid "Button Label"
+msgstr ""
+
+#: Admin/Settings/Settings_Page.php:61
+msgid "Settings updated."
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:24 Admin/Taxonomy/Product_Cat.php:133
+#: Admin/Type/Meta/Frontpage.php:147
+#, fuzzy
+#| msgid "Background image"
+msgid "Background Image"
+msgstr "Image background"
+
+#: Admin/Taxonomy/Product_Cat.php:28 Admin/Taxonomy/Product_Cat.php:138
+msgid "Upload/Add image"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:29 Admin/Taxonomy/Product_Cat.php:139
+#, fuzzy
+#| msgid "Remove Link"
+msgid "Remove image"
+msgstr "Supprimer le lien"
+
+#: Admin/Taxonomy/Product_Cat.php:53 Admin/Taxonomy/Product_Cat.php:163
+msgid "Choose an image"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:55 Admin/Taxonomy/Product_Cat.php:165
+msgid "Use image"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:122
+msgid "Display type"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:125
+msgid "Default"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:126
+msgid "Products"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:127
+msgid "Subcategories"
+msgstr ""
+
+#: Admin/Taxonomy/Product_Cat.php:128
+msgid "Both"
+msgstr ""
+
+#: Admin/Type/Adspace.php:24
+msgid "AdSpace"
+msgstr ""
+
+#: Admin/Type/Adspace.php:25
+msgid "AdSpaces"
+msgstr ""
+
+#: Admin/Type/Adspace.php:26
+msgid "adspace"
+msgstr ""
+
+#: Admin/Type/Adspace.php:35
+msgid "adspaces"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:32 Admin/Type/Meta/Moringa.php:77
+msgid "Mission"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:35 Admin/Type/Meta/About.php:78
+#: Admin/Type/Meta/Frontpage.php:48 Admin/Type/Meta/Frontpage.php:121
+#: Admin/Type/Meta/Mood.php:46 Admin/Type/Meta/Mood.php:68
+#: Admin/Type/Meta/Moringa.php:36 Admin/Type/Meta/Shop.php:31
+msgid "Headline"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:41 Admin/Type/Meta/About.php:84
+#: Admin/Type/Meta/About.php:127 Admin/Type/Meta/About.php:215
+#: Admin/Type/Meta/Blog.php:33 Admin/Type/Meta/Frontpage.php:90
+#: Admin/Type/Meta/Moringa.php:86 Admin/Type/Meta/Moringa.php:122
+msgid "Subheadline"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:47 Admin/Type/Meta/About.php:90
+#: Admin/Type/Meta/About.php:141 Admin/Type/Meta/About.php:229
+#: Admin/Type/Meta/Frontpage.php:53 Admin/Type/Meta/Frontpage.php:126
+#: Admin/Type/Meta/Mood.php:52 Admin/Type/Meta/Mood.php:73
+#: Admin/Type/Meta/Moringa.php:42 Admin/Type/Meta/Moringa.php:64
+#: Admin/Type/Meta/Moringa.php:100
+msgid "Text"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:53 Admin/Type/Meta/About.php:96
+#: Admin/Type/Meta/About.php:153 Admin/Type/Meta/About.php:190
+#: Admin/Type/Meta/About.php:241 Admin/Type/Meta/Frontpage.php:59
+#: Admin/Type/Meta/Frontpage.php:132 Admin/Type/Meta/Mood.php:79
+#: Admin/Type/Meta/Shop.php:37
+msgid "Button label"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:59 Admin/Type/Meta/About.php:102
+#: Admin/Type/Meta/About.php:159 Admin/Type/Meta/About.php:196
+#: Admin/Type/Meta/About.php:247 Admin/Type/Meta/Frontpage.php:35
+#: Admin/Type/Meta/Frontpage.php:65 Admin/Type/Meta/Frontpage.php:98
+#: Admin/Type/Meta/Frontpage.php:138 Admin/Type/Meta/Mood.php:85
+#: Admin/Type/Meta/Moringa.php:130 Admin/Type/Meta/Shop.php:43
+msgid "Button Target"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:68 Admin/Type/Meta/About.php:111
+#: Admin/Type/Meta/About.php:147 Admin/Type/Meta/About.php:172
+#: Admin/Type/Meta/About.php:235 Admin/Type/Meta/Blog.php:49
+#: Admin/Type/Meta/Frontpage.php:74 Admin/Type/Meta/Mood.php:34
+#: Admin/Type/Meta/Mood.php:58 Admin/Type/Meta/Mood.php:94
+#: Admin/Type/Meta/Moringa.php:48 Admin/Type/Meta/Moringa.php:70
+#: Admin/Type/Meta/Moringa.php:106
+msgid "Image"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:75
+msgid "Founder"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:118
+msgid "Team"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:169
+msgid "Testimonial"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:178
+msgid "Quote"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:184
+msgid "Author"
+msgstr ""
+
+#: Admin/Type/Meta/About.php:206 Admin/Type/Meta/Shop.php:28
+msgid "Stores"
+msgstr ""
+
+#: Admin/Type/Meta/Blog.php:30
+msgid "Description"
+msgstr "Description"
+
+#: Admin/Type/Meta/Blog.php:40
+msgid "Adspace"
+msgstr ""
+
+#: Admin/Type/Meta/Blog.php:55
+msgid "Button Text"
+msgstr ""
+
+#: Admin/Type/Meta/Blog.php:61
+msgid "Target"
+msgstr ""
+
+#: Admin/Type/Meta/Blog.php:71 Admin/Type/Meta/Frontpage.php:108
+msgid "Newsletter Optin"
+msgstr ""
+
+#: Admin/Type/Meta/Blog.php:74 Admin/Type/Meta/Frontpage.php:111
+msgid "Active Campaign Form ID"
+msgstr ""
+
+#: Admin/Type/Meta/Frontpage.php:32
+msgid "Hero"
+msgstr ""
+
+#: Admin/Type/Meta/Frontpage.php:45 Admin/Type/Meta/Mood.php:65
+msgid "Product"
+msgstr ""
+
+#: Admin/Type/Meta/Frontpage.php:81 Admin/Type/Meta/Moringa.php:113
+#, fuzzy
+#| msgid "Countries"
+msgid "Stories"
+msgstr "Pays"
+
+#: Admin/Type/Meta/Frontpage.php:118
+msgid "Moringa"
+msgstr ""
+
+#: Admin/Type/Meta/Mood.php:31
+msgid "Thumbnail"
+msgstr ""
+
+#: Admin/Type/Meta/Mood.php:41 Admin/Type/Meta/Moringa.php:31
+#, fuzzy
+#| msgid "Description"
+msgid "Sections"
+msgstr "Description"
+
+#: Admin/Type/Meta/Moringa.php:55
+msgid "Nutritional Guide"
+msgstr ""
+
+#: Frontend/Component/Featured_Post.php:28
+#: Templates/Partials/Global/Item_Loop.php:67
+msgid "Read more"
+msgstr "Læs mere"
+
+#: Frontend/Component/Header.php:46
+msgid "View your shopping cart"
+msgstr "Se din kurv"
+
+#: Frontend/Component/Header.php:59
+#, php-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d produkt"
+msgstr[1] "%d produkter"
+
+#: Frontend/Type/Blog.php:30
+msgid "«"
+msgstr ""
+
+#: Frontend/Type/Blog.php:31
+msgid "»"
+msgstr ""
+
+#: Frontend/Type/Cart.php:37 Frontend/Type/Checkout.php:37
+#: Frontend/Type/My_Account.php:37
+msgid "My Cart"
+msgstr "Kurv"
+
+#: Frontend/Type/Frontpage.php:84
+msgid "Eat Happy Blog"
+msgstr "Eat Happy Blog"
+
+#: Frontend/Type/Frontpage.php:110 Frontend/Type/Post.php:62
+msgid "Our Moringa recipes"
+msgstr "Vores Moringa opskrifte"
+
+#: Frontend/Type/Mood.php:40
+msgid "Mood"
+msgstr "Mood"
+
+#: Frontend/Type/Shop.php:43
+msgid "Our products"
+msgstr "Vores produkter"
+
+#: Frontend_Post/Type/Campaign.php:25
+msgid "Campaign"
+msgstr ""
+
+#: Frontend_Post/Type/Campaign.php:26
+msgid "Campaigns"
+msgstr ""
+
+#: Frontend_Post/Type/Campaign.php:27
+msgid "campaign"
+msgstr ""
+
+#: Templates/Partials/Global/Footer.php:22
+msgid "Newsletter"
+msgstr "Nyhedsbrev"
+
+#: Templates/Partials/Global/Footer.php:29
+msgid "Follow us"
+msgstr "Følg os"
+
+#: Templates/Partials/Global/Item_Loop.php:57
+msgid "Add to cart"
+msgstr "Tilføj til kurv"
+
+#: Templates/Partials/Global/Item_Loop.php:62
+msgid "Coming soon"
+msgstr "Kommer snart"
+
+#: Templates/Type/Post.php:11
+msgid "Eat Happy Blog <span>/</span>"
+msgstr ""
+
+#: Templates/Type/Post.php:30
+msgid "by"
+msgstr "af"
+
+#~ msgid "Artist"
+#~ msgstr "Artist"
+
+#~ msgid "Artists"
+#~ msgstr "Artistes"
+
+#~ msgid "artist"
+#~ msgstr "artiste"
+
+#~ msgid "artists"
+#~ msgstr "artistes"
+
+#~ msgid "Event"
+#~ msgstr "Événement"
+
+#~ msgid "Events"
+#~ msgstr "Événements"
+
+#~ msgid "event"
+#~ msgstr "événement"
+
+#~ msgid "Artist Information"
+#~ msgstr "Informations sur l’artiste"
+
+#~ msgid "Artist Portfolio"
+#~ msgstr "Portfolio de l’artiste"
+
+#~ msgid "Videos"
+#~ msgstr "Vidéos"
+
+#~ msgid "Insert youtube or vimeo link"
+#~ msgstr "Entrez le lien Youtube ou Vimeo"
+
+#~ msgid "Pictures"
+#~ msgstr "Photos"
+
+#~ msgid "Artist Links"
+#~ msgstr "Liens de l’artiste"
+
+#~ msgid "Link {#}"
+#~ msgstr "Lien {#}"
+
+#~ msgid "Add Another Link"
+#~ msgstr "Ajouter un nouveau lien"
+
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#~ msgid "URL"
+#~ msgstr "Lien URL"
+
+#~ msgid "City Information"
+#~ msgstr "Informations sur la ville"
+
+#~ msgid "Event Information"
+#~ msgstr "Informations sur l’événement"
+
+#~ msgid "Location"
+#~ msgstr "Lieu"
+
+#~ msgid "Start date"
+#~ msgstr "Date d’ouverture"
+
+#~ msgid "End date"
+#~ msgstr "Date de fermeture"
+
+#~ msgid "Event description"
+#~ msgstr "Description de l’événement"
+
+#~ msgid "Tickets"
+#~ msgstr "Billets"
+
+#~ msgid "Link to ticket sales"
+#~ msgstr "Lien vers la billetterie"
+
+#~ msgid "Event Portfolio"
+#~ msgstr "Portfolio de l’événement"
+
+#~ msgid "Schedule Slots"
+#~ msgstr "Créneaux"
+
+#~ msgid "Slot {#}"
+#~ msgstr "Créneau {#}"
+
+#~ msgid "Add Another Slot"
+#~ msgstr "Ajouter un nouveau créneau"
+
+#~ msgid "Remove Slot"
+#~ msgstr "Supprimer un créneau"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Work / Artist"
+#~ msgstr "Œuvre / Artiste"
+
+#~ msgid "Tickets link"
+#~ msgstr "Lien vers la billetterie"
+
+#~ msgid "Sponsors List"
+#~ msgstr "Liste des sponsors"
+
+#~ msgid "Add Another Sponsor"
+#~ msgstr "Ajouter un nouveau sponsor"
+
+#~ msgid "Remove Sponsor"
+#~ msgstr "Supprimer le sponsor"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Link"
+#~ msgstr "Lien"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Team Member Information"
+#~ msgstr "Information sur le membre"
+
+#~ msgid "Role"
+#~ msgstr "Rôle"
+
+#~ msgid "Team Member Links"
+#~ msgstr "Liens du membre"
+
+#~ msgid "work Information"
+#~ msgstr "Information sur l’œuvre"
+
+#~ msgid "Work Portfolio"
+#~ msgstr "Portfolio de l’œuvre"
+
+#~ msgid "Schedule"
+#~ msgstr "Programme"
+
+#~ msgid "Schedules"
+#~ msgstr "Programmes"
+
+#~ msgid "schedule"
+#~ msgstr "programme"
+
+#~ msgid "Sponsor Type"
+#~ msgstr "Type de sponsor"
+
+#~ msgid "Sponsor Types"
+#~ msgstr "Types de sponsor"
+
+#~ msgid "Search Cities"
+#~ msgstr "Chercher la ville"
+
+#~ msgid "All Cities"
+#~ msgstr "Toutes les villes"
+
+#~ msgid "Parent City"
+#~ msgstr "Ville parente"
+
+#~ msgid "Parent City:"
+#~ msgstr "Ville parente:"
+
+#~ msgid "Edit City"
+#~ msgstr "Modifier la ville"
+
+#~ msgid "Update City"
+#~ msgstr "Mettre à jour la ville"
+
+#~ msgid "Add New City"
+#~ msgstr "Ajouter une nouvelle ville"
+
+#~ msgid "New City Name"
+#~ msgstr "Nouveau nom de ville"
+
+#~ msgid "Cities"
+#~ msgstr "Villes"
+
+#~ msgid "Search Countries"
+#~ msgstr "Chercher le pays"
+
+#~ msgid "All Countries"
+#~ msgstr "Tous les pays"
+
+#~ msgid "Parent Country"
+#~ msgstr "Pays parent"
+
+#~ msgid "Parent Country:"
+#~ msgstr "Pays parent:"
+
+#~ msgid "Edit Country"
+#~ msgstr "Modifier le pays"
+
+#~ msgid "Update Country"
+#~ msgstr "Mettre à jour le pays"
+
+#~ msgid "Add New Country"
+#~ msgstr "Ajouter un nouveau pays"
+
+#~ msgid "New Country Name"
+#~ msgstr "Nouveau nom de pays"
+
+#~ msgid "Search Genres"
+#~ msgstr "Chercher le genre"
+
+#~ msgid "All Genres"
+#~ msgstr "Tous les genres"
+
+#~ msgid "Parent Genre"
+#~ msgstr "Genre parent"
+
+#~ msgid "Parent Genre:"
+#~ msgstr "Genre parent:"
+
+#~ msgid "Edit Genre"
+#~ msgstr "Modifier le genre"
+
+#~ msgid "Update Genre"
+#~ msgstr "Mettre à jour le genre"
+
+#~ msgid "Add New Genre"
+#~ msgstr "Ajouter un nouveau genre"
+
+#~ msgid "New Genre Name"
+#~ msgstr "Nouveau nom de genre"
+
+#~ msgid "Team member"
+#~ msgstr "Collaborateur"
+
+#~ msgid "Team members"
+#~ msgstr "Collaborateurs"
+
+#~ msgid "team"
+#~ msgstr "collaborateur"
+
+#~ msgid "Work"
+#~ msgstr "Œuvre"
+
+#~ msgid "Works"
+#~ msgstr "Œuvres"
+
+#~ msgid "work"
+#~ msgstr "œuvre"
+
+#~ msgid "Upcoming events"
+#~ msgstr "Événements à venir"
+
+#~ msgid "More info"
+#~ msgstr "Informations"
+
+#~ msgid "More artists"
+#~ msgstr "Artistes"
+
+#~ msgid "Contact us"
+#~ msgstr "Contactez-nous"
+
+#~ msgid "Featured in"
+#~ msgstr "Événements liés"
+
+#~ msgid "More about"
+#~ msgstr "En savoir plus"
+
+#~ msgid "Related artists"
+#~ msgstr "Artistes liés"
+
+#~ msgid "Buy tickets"
+#~ msgstr "Billets"
+
+#~ msgid "Find our events in Europe & in the Philippines"
+#~ msgstr "Trouvez nos événements en Europe et aux Philippines"
+
+#~ msgid "Past events"
+#~ msgstr "Événements passés"

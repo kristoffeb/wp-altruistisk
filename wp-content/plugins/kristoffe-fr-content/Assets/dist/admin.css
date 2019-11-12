@@ -1,0 +1,19 @@
+.cmb-options-page .cmb-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.cmb-options-page .cmb2-metabox-title {
+    font-size: 20px;
+}
+
+.cmb-options-page .cmb2-metabox-description {
+    padding-top: 0;
+}
+
+.cmb-options-page .form-table {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
