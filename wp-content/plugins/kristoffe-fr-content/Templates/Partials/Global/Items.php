@@ -7,9 +7,11 @@ use Kristoffe\Content\Main;
 	<div class="grid">
 
 		<div class="content">
-	        <div class="headline">
-	            <h2><?php echo $data['title']; ?></h2>
-	        </div>
+			<?php if ( $data['title'] ) : ?>
+				<div class="headline">
+		            <h2><?php echo $data['title']; ?></h2>
+		        </div>
+			<?php endif; ?>
 
 			<?php if ( $data['subheadline'] ) : ?>
 				<div class="subheadline">
