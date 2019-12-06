@@ -12,8 +12,8 @@
 		"wpackagist-plugin/cmb2": "2.6.0",
 		"wpackagist-plugin/glue-for-yoast-seo-amp": "0.5.*",
 		"wpackagist-plugin/hyperdb": "1.5",
-		"wpackagist-plugin/redirection": "4.4.*",
-		"wpackagist-plugin/wordpress-seo": "12.5.*"
+		"wpackagist-plugin/redirection": "4.5.*",
+		"wpackagist-plugin/wordpress-seo": "12.6.*"
 	},
 	"require-dev": {
 		"wpackagist-plugin/pco-kint": "1.*",
