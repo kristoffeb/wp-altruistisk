@@ -1,0 +1,52 @@
+{
+  "name": "texte-tekst",
+  "version": "0.0.1",
+  "description": "A WordPress/Gulp/Bower/Sass starter kit.",
+  "homepage": "https://github.com/kristoffeb/wp-texte-tekst",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kristoffeb/wp-texte-tekst.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "Kristoffe Biglete": "kristoffe.biglete@gmail.com"
+  },
+  "license": "GNU General Public Licence 2.0",
+  "main": "gulpfile.js",
+  "private": true,
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "*",
+    "gulp-debug": "^4.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-foreach": "*",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jshint": "^2.1.0",
+    "gulp-livereload": "^4.0.0",
+    "gulp-load-plugins": "*",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "*",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-streamify": "*",
+    "gulp-string-replace": "^1.1.2",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "*",
+    "imagemin-pngquant": "^4.2.2",
+    "jshint": "^2.9.6",
+    "jshint-stylish": "*",
+    "npm-check-updates": "^2.14.3",
+    "path": "*",
+    "tiny-lr": "^1.1.1"
+  },
+  "dependencies": {
+    "gulp-flatten": "0.0.4",
+    "gulp-install": "^0.6.0"
+  }
+}

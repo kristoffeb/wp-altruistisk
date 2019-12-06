@@ -1,0 +1,48 @@
+.partners {
+	background-color: $lightgray;
+	position: relative;
+
+	.inner-grid {
+		position: relative;
+		z-index: 2;
+		@include flex;
+		padding: rem(100) 0;
+		justify-content: center;
+
+		@include media($tablet) {
+			padding: rem(40) 0;
+		}
+	}
+
+	h2 {
+		width: 28%;
+		font-weight: 800;
+		font-size: 1.8rem;
+		color: $gray;
+		display: none;
+	}
+
+	.partner-loop {
+		width: 33%;
+
+		.title {
+			display: none;
+		}
+
+		.logo {
+			img {
+				width: rem(165);
+			}
+		}
+
+		@include media($tablet) {
+			text-align: center;
+		}
+
+		@include media($mobile) {
+			.logo img {
+				width: rem(100);
+			}
+		}
+	}
+}

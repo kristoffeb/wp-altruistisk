@@ -1,0 +1,60 @@
+.search {
+	.home & {
+		margin-bottom: rem(80);
+
+		@include media($mobile) {
+			margin-bottom: rem(50);
+		}
+	}
+
+	h2 {
+		@include block-title;
+	}
+
+	.input-wrap,
+	.select-wrap {
+		@include main-bg-color;
+		position: relative;
+		height: rem(45);
+		margin-bottom: rem(35);
+		box-shadow: (- rem(7)) rem(8) $navy;
+
+		@include media($mobile) {
+			margin-bottom: rem(20);
+			height: rem(35);
+		}
+	}
+
+	.input-wrap {
+		display: none !important;
+	}
+
+	input,
+    select {
+		@include styled-input;
+	}
+
+	.select-wrap {
+		@include icons( $symbol: '\e874', $color: $white, $margin: '0' );
+
+		&::before {
+			position: absolute;
+			z-index: 1;
+			right: rem(18);
+			top: 1.25rem;
+		}
+
+		.menu-open & {
+			&::before {
+				color: $sky;
+			}
+		}
+	}
+
+	input.button {
+		background-color: $darkgray;
+		width: auto;
+		margin: 0 auto;
+		display: block;
+	}
+}

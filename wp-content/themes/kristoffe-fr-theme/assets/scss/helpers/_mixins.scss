@@ -1,0 +1,123 @@
+@mixin media($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+@mixin screen-reader-text() {
+    position: absolute;
+	margin: -1px;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+}
+
+@mixin icons($symbol, $set: 'linearicons', $place: 'before', $color: '', $margin: '0 12px') {
+	&::#{$place} {
+		font-family: $set;
+		content: $symbol;
+		margin: unquote($margin);
+
+		@if $color != '' {
+			color: $color;
+		}
+	}
+}
+
+@function rem($pixels, $context: 16) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}
+
+@mixin flex() {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin main-color() {
+    .lang-fr & {
+        color: $sky;
+    }
+    .lang-da & {
+        color: $orange;
+    }
+    .lang-de & {
+        color: $mint;
+    }
+}
+
+@mixin main-bg-color() {
+    .lang-fr & {
+        background-color: $sky;
+    }
+    .lang-da & {
+        background-color: $orange;
+    }
+    .lang-de & {
+        background-color: $mint;
+    }
+}
+
+@mixin styled-input() {
+	position: relative;
+	z-index: 2;
+	border: 0;
+	background: transparent;
+	-webkit-appearance: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	height: rem(45);
+	line-height: rem(45);
+	vertical-align: middle;
+	padding: 0 rem(18);
+	color: $white;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: -0.03rem;
+	text-align: left;
+	font-size: 0.9rem;
+
+	&::placeholder {
+		color: $white;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	option {
+		text-transform: none;
+	}
+
+    @include media($mobile) {
+        height: rem(35);
+        line-height: rem(35);
+    }
+}
+
+@mixin block-title() {
+    color: $black;
+    font-weight: 800;
+    font-size: rem(40);
+    letter-spacing: -0.03rem;
+    margin-bottom: rem(40);
+
+    @include media($mobile) {
+        font-size: rem(30);
+        margin-bottom: rem(20);
+    }
+}

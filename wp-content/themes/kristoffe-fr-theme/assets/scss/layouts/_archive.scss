@@ -1,0 +1,109 @@
+.main[class^="archive"],
+.main[class*="archive"] {
+	position: relative;
+	margin-bottom: rem(70);
+
+	> .inner-grid {
+		@include flex;
+		align-items: flex-start;
+	}
+
+	.archive-header {
+		width: 100%;
+		margin: rem(50) 0 rem(25);
+
+		.archive-title {
+			@include block-title;
+		}
+
+		@include media($mobile) {
+			margin: rem(25) 0;
+		}
+	}
+
+	.archive-content {
+		width: 70%;
+		padding-right: rem(60);
+
+		@include media($mobile) {
+			width: 100%;
+			padding: 0;
+		}
+
+		.inner-grid {
+			width: 100%;
+			@include flex;
+			align-items: flex-start;
+
+			@include media($mobile) {
+				padding: 0;
+			}
+		}
+
+		.wp-post-image-wrap {
+			width: rem(100);
+			margin-bottom: rem(65);
+		}
+
+		.content-wrap {
+			width: calc(100% - #{rem(100)});
+			text-align: left;
+			padding-left: rem(40);
+
+			@include media($mobile) {
+				margin-bottom: rem(25);
+			}
+		}
+
+		.article-header {
+			margin: 0;
+			margin-bottom: 0.5rem;
+
+			h2,
+			h2 a {
+				margin-bottom: rem(8);
+				font-family: 'Lora';
+				font-weight: 700;
+				font-style: italic;
+				font-size: 1.75rem;
+				@include main-color;
+				text-transform: none;
+			}
+
+			.writer {
+				display: block;
+				margin-bottom: rem(15);
+				@include main-color;
+				font-weight: 700;
+				font-size: 0.9rem;
+			}
+		}
+
+		.content {
+			font-size: 0.9rem;
+			font-weight: 400;
+			line-height: 1.5rem;
+			width: 100%;
+
+			@include media($mobile) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.archive-footer {
+		width: 30%;
+
+		h2 {
+			@include block-title;
+			color: $darkgray;
+			font-size: rem(25);
+			margin-bottom: rem(30);
+		}
+
+		@include media($mobile) {
+			width: 100%;
+			margin-bottom: rem(40);
+		}
+	}
+}
