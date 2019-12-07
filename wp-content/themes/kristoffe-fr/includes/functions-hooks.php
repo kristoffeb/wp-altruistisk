@@ -9,7 +9,7 @@
  * @link http://codex.wordpress.org/Plugin_API/Action_Reference
  */
 
-namespace TexteTekst;
+namespace Kristoffe;
 
 /**
  * Loads css in the head and js at the end of body
@@ -99,14 +99,6 @@ function deregister_scripts() {
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\deregister_scripts', 100 );
 
-/**
- * Show background lines.
- */
-function bg_lines() {
-	get_template_part( 'partial/background', 'lines' );
-}
-
-add_action( THEMEDOMAIN . '-before_header', __NAMESPACE__ . '\bg_lines' );
 
 /**
  * Facebook Script
@@ -124,4 +116,4 @@ function header_fb_script() {
 	<?php
 }
 
-add_action( 'wp_head', __NAMESPACE__ . '\header_fb_script' );
+// add_action( 'wp_head', __NAMESPACE__ . '\header_fb_script' );

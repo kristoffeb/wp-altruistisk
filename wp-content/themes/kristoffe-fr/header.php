@@ -7,7 +7,7 @@
  *
  */
 
-namespace TexteTekst;
+namespace Kristoffe;
 ?>
 
 <!DOCTYPE html>

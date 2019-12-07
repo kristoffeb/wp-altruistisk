@@ -23,3 +23,5 @@ node_modules
 .project
 .settings
 ._*
+assets/.tmp
+package-lock.json

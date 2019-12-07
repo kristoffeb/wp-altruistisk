@@ -8,7 +8,7 @@
  *
  */
 
-namespace TexteTekst;
+namespace Kristoffe;
 
 /**
  * Theme setup
@@ -23,17 +23,8 @@ function theme_setup() {
 	// Loads theme languages
 	load_theme_textdomain( THEMEDOMAIN, get_template_directory() . '/languages' );
 
-	// Include class files
-	get_template_part( 'includes/class-template' );
-	get_template_part( 'includes/class-sidebar' );
-
-	if ( is_multisite() ) {
-		get_template_part( 'includes/class-global-elements' );
-	}
-
 	// Include function files
 	get_template_part( 'includes/functions-helpers' );
-	get_template_part( 'includes/foundation/class-menu-walker' );
 	get_template_part( 'includes/functions-hooks' );
 	get_template_part( 'includes/functions-menus' );
 	get_template_part( 'includes/functions-setup-sidebars' );

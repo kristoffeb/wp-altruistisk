@@ -6,7 +6,7 @@
  *
  */
 
-namespace TexteTekst\Admin;
+namespace Kristoffe\Admin;
 
 /**
  * Adds custom js and css for admin panel
