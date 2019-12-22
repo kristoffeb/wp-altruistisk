@@ -8,7 +8,7 @@
  *
  */
 
-namespace Kristoffe;
+namespace Mitfoerstejob;
 
 /**
  * Theme setup
@@ -26,8 +26,6 @@ function theme_setup() {
 	// Include function files
 	get_template_part( 'includes/functions-helpers' );
 	get_template_part( 'includes/functions-hooks' );
-	get_template_part( 'includes/functions-menus' );
-	get_template_part( 'includes/functions-setup-sidebars' );
 
 	// Include on admin and login page
 	if ( is_admin() ) {
@@ -57,14 +55,7 @@ function theme_setup() {
 	// Navigation
 	register_nav_menus(	array(
 		'main-nav' => __( 'Main Navigation', THEMEDOMAIN ),
-		'top-nav' => __( 'Top Navigation', THEMEDOMAIN ),
 	) );
-
-	// Sidebars
-	setup_sidebars();
-
-	// Template
-	new Template();
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );

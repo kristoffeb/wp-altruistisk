@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Type\Meta;
+namespace Mitfoerstejob\Content\Admin\Type\Meta;
 
-use Kristoffe\Content\Admin\Type\Meta\Helpers;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Type\Meta\Helpers;
+use Mitfoerstejob\Content\Main;
 
 class Project extends Meta_Page {
 

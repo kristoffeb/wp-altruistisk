@@ -1,6 +1,6 @@
 <?php
 
-namespace Kristoffe\Content\Core;
+namespace Mitfoerstejob\Content\Core;
 
 /**
  * Bootstraps custom post types that needs to be accessible on the frontend

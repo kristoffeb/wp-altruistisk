@@ -1,6 +1,6 @@
 <?php
 
-namespace Kristoffe\Content\Admin;
+namespace Mitfoerstejob\Content\Admin;
 
 class Bootstrap {
 

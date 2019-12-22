@@ -7,7 +7,7 @@
  *
  */
 
-namespace Kristoffe;
+namespace Mitfoerstejob;
 ?>
 
 <!DOCTYPE html>

@@ -1,8 +1,8 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Helpers;
+namespace Mitfoerstejob\Content\Admin\Helpers;
 
 class Constants {
 
-	const FORM_PREFIX = 'kristoffe_content_';
+	const FORM_PREFIX = 'mitfoerstejob_content_';
 }

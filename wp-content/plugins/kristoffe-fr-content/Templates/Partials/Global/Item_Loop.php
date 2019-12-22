@@ -1,5 +1,5 @@
 <?php
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 ?>
 
 <li class="item <?php echo ( isset( $item['class'] ) ? $item['class'] : '' ); ?>">

@@ -1,22 +1,22 @@
 <?php
 /**
  *
- * @package kristoffe
+ * @package mitfoerstejob
  * @author  Kristoffe Biglete
  * @link https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/
  * @link http://www.phpdoc.org/docs/latest/guides/docblocks.html
  *
- * Plugin Name: Kristoffe - Content
+ * Plugin Name: Mitfoerstejob - Content
  * Plugin URI:
- * Description: Extended native content for Kristoffe
+ * Description: Extended native content for Mitfoerstejob
  * Version:     1.0.0
  * Author:      Kristoffe Biglete
  * Author URI:  https://github.com/kristoffeb
- * Text Domain: kristoffe
+ * Text Domain: mitfoerstejob
  * Domain Path: /languages
  */
 
-namespace Kristoffe\Content;
+namespace Mitfoerstejob\Content;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -36,7 +36,7 @@ class Main {
 	 * Text domain for translators
 	 * Don't use "-" (dash) in the name, as it can potentially break the site if the text domain is used in a certain context.
 	 */
-	const TEXT_DOMAIN = 'kristoffe';
+	const TEXT_DOMAIN = 'mitfoerstejob';
 
 	/**
 	 * Do not load this more than once.

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Core\Type;
+namespace Mitfoerstejob\Content\Core\Type;
 
-use Kristoffe\Content\Admin\Helpers;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Helpers;
+use Mitfoerstejob\Content\Main;
 
 class Project {
 

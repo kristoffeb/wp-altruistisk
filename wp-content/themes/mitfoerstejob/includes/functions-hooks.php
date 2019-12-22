@@ -9,7 +9,7 @@
  * @link http://codex.wordpress.org/Plugin_API/Action_Reference
  */
 
-namespace Kristoffe;
+namespace Mitfoerstejob;
 
 /**
  * Loads css in the head and js at the end of body

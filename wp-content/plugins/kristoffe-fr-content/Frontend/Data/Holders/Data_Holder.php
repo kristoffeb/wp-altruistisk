@@ -1,6 +1,6 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Data\Holders;
+namespace Mitfoerstejob\Content\Frontend\Data\Holders;
 
 class Data_Holder implements \ArrayAccess {
 

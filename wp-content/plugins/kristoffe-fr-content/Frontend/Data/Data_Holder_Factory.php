@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Data;
+namespace Mitfoerstejob\Content\Frontend\Data;
 
-use Kristoffe\Content\Admin\Helpers\Constants;
-use Kristoffe\Content\Frontend\Data\Holders\Data_Holder;
+use Mitfoerstejob\Content\Admin\Helpers\Constants;
+use Mitfoerstejob\Content\Frontend\Data\Holders\Data_Holder;
 
 class Data_Holder_Factory {
 	private $post_id;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Helpers\Form;
+namespace Mitfoerstejob\Content\Admin\Helpers\Form;
 
 use CMB2;
-use Kristoffe\Content\Admin\Helpers\Constants;
+use Mitfoerstejob\Content\Admin\Helpers\Constants;
 
 class Meta_Box {
 	/** @var CMB2 */

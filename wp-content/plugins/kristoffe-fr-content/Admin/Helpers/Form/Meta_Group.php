@@ -1,6 +1,6 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Helpers\Form;
+namespace Mitfoerstejob\Content\Admin\Helpers\Form;
 
 use CMB2;
 

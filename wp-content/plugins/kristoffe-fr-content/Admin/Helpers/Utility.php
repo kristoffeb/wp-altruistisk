@@ -1,8 +1,8 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Helpers;
+namespace Mitfoerstejob\Content\Admin\Helpers;
 
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 
 class Utility {
 

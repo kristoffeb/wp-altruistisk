@@ -11,7 +11,7 @@
  * @license http://www.opensource.org/licenses/mit-license.html MIT License
  */
 
-namespace Kristoffe\Content\Admin\Helpers;
+namespace Mitfoerstejob\Content\Admin\Helpers;
 
 class Custom_Post_Type {
 

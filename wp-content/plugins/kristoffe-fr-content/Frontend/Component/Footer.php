@@ -1,8 +1,8 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Component;
+namespace Mitfoerstejob\Content\Frontend\Component;
 
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 
 class Footer {
 
@@ -21,7 +21,7 @@ class Footer {
 
 	public function get_logo_url() {
 		$logo_url = sprintf(
-			'%s/assets/img/kristoffe_logo_footer.svg',
+			'%s/assets/img/mitfoerstejob_logo_footer.svg',
 			get_template_directory_uri()
 		);
 

@@ -1,5 +1,5 @@
 <?php
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 ?>
 
 <section class="items <?php echo $classes; ?>">

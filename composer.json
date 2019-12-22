@@ -43,7 +43,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Kristoffe\\Content\\": "wp-content/plugins/kristoffe-fr-content/"
+			"Mitfoerstejob\\Content\\": "wp-content/plugins/mitfoerstejob-content/"
 		}
 	}
 }

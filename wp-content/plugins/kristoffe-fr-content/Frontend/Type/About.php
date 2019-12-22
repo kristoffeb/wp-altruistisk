@@ -1,11 +1,11 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Type;
+namespace Mitfoerstejob\Content\Frontend\Type;
 
-use Kristoffe\Content\Admin\Type\Meta;
-use Kristoffe\Content\Frontend\Component;
-use Kristoffe\Content\Frontend\Data\Data_Holder_Factory;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Type\Meta;
+use Mitfoerstejob\Content\Frontend\Component;
+use Mitfoerstejob\Content\Frontend\Data\Data_Holder_Factory;
+use Mitfoerstejob\Content\Main;
 
 class About implements Page {
 
@@ -35,7 +35,7 @@ class About implements Page {
 	public function hero() {
 		$post = new Component\Featured_Post( get_the_ID() );
 
-		$post_data = $post->get_post_data( $excerpt = FALSE, $show_button = FALSE, 'kristoffe-section' );
+		$post_data = $post->get_post_data( $excerpt = FALSE, $show_button = FALSE, 'mitfoerstejob-section' );
 
 		if ( ! empty( $post ) ) {
 			Main::get_template_part( 'Partials/Global/Section.php', [
@@ -49,7 +49,7 @@ class About implements Page {
 		$data = $this->factory->create_data_holder( Meta\About::PREFIX . 'mission_' );
 
 		if ( $data['image'] ) {
-			$data['image'] = wp_get_attachment_image_src( $data['image_id'], 'kristoffe-hero' )[0];
+			$data['image'] = wp_get_attachment_image_src( $data['image_id'], 'mitfoerstejob-hero' )[0];
 		}
 
 		if ( $data ) {
@@ -65,7 +65,7 @@ class About implements Page {
 		$data = $this->factory->create_data_holder( Meta\About::PREFIX . 'founder_' );
 
 		if ( $data['image'] ) {
-			$data['image'] = wp_get_attachment_image_src( $data['image_id'], 'kristoffe-section' )[0];
+			$data['image'] = wp_get_attachment_image_src( $data['image_id'], 'mitfoerstejob-section' )[0];
 		}
 
 		if ( $data ) {
@@ -92,7 +92,7 @@ class About implements Page {
 		$data = $this->factory->create_data_holder( Meta\About::PREFIX . 'testimonial_' );
 
 		if ( $data['image'] ) {
-			$data['image'] = wp_get_attachment_image_src( $data['image_id'], 'kristoffe-item' )[0];
+			$data['image'] = wp_get_attachment_image_src( $data['image_id'], 'mitfoerstejob-item' )[0];
 		}
 
 		if ( $data ) {

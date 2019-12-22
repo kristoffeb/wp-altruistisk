@@ -1,12 +1,12 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Type;
+namespace Mitfoerstejob\Content\Frontend\Type;
 
-use Kristoffe\Content\Admin\Type\Meta;
-use Kristoffe\Content\Frontend\Component;
-use Kristoffe\Content\Frontend\Data\Data_Holder_Factory;
-use Kristoffe\Content\Frontend\Data\Holders\Data_Holder;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Type\Meta;
+use Mitfoerstejob\Content\Frontend\Component;
+use Mitfoerstejob\Content\Frontend\Data\Data_Holder_Factory;
+use Mitfoerstejob\Content\Frontend\Data\Holders\Data_Holder;
+use Mitfoerstejob\Content\Main;
 
 class Post implements Page {
 

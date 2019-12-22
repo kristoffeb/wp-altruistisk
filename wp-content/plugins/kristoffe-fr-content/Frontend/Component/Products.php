@@ -1,8 +1,8 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Component;
+namespace Mitfoerstejob\Content\Frontend\Component;
 
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 
 class Products {
 
@@ -41,7 +41,7 @@ class Products {
 	}
 
 	public function get_background_image( $post ) {
-		$image_url = get_the_post_thumbnail_url( $post['ID'], 'kristoffe-item' );
+		$image_url = get_the_post_thumbnail_url( $post['ID'], 'mitfoerstejob-item' );
 
 		return $image_url;
 	}

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Settings;
+namespace Mitfoerstejob\Content\Admin\Settings;
 
-use Kristoffe\Content\Admin\Type\Meta\Helpers\Sanitization_Filters;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Type\Meta\Helpers\Sanitization_Filters;
+use Mitfoerstejob\Content\Main;
 
 class Optin extends Settings_Page {
 

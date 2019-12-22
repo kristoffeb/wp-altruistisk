@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Taxonomy;
+namespace Mitfoerstejob\Content\Admin\Taxonomy;
 
-use Kristoffe\Content\Admin\Helpers;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Helpers;
+use Mitfoerstejob\Content\Main;
 
 class Product_Cat {
 

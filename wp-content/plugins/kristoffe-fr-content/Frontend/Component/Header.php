@@ -1,8 +1,8 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Component;
+namespace Mitfoerstejob\Content\Frontend\Component;
 
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 
 class Header {
 

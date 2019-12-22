@@ -1,7 +1,7 @@
 <?php
-namespace Kristoffe\Content\Admin\Settings;
+namespace Mitfoerstejob\Content\Admin\Settings;
 
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Main;
 
 abstract class Settings_Page {
 	private $prefix;

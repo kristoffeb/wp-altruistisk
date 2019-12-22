@@ -6,9 +6,9 @@ wp-content/languages/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/plugins/*
-!wp-content/plugins/kristoffe*/
+!wp-content/plugins/mitfoerstejob*/
 wp-content/themes/*
-!wp-content/themes/kristoffe*/
+!wp-content/themes/mitfoerstejob*/
 !wp-content/mu-plugins/
 wp-config.php
 
@@ -24,6 +24,6 @@ Thumbs.db
 .idea/
 .tmp/
 
-wp-content/themes/kristoffe-fr/.sass-cache
-wp-content/themes/kristoffe-fr/bower_components
-wp-content/themes/kristoffe-fr/node_modules
+wp-content/themes/mitfoerstejob/.sass-cache
+wp-content/themes/mitfoerstejob/bower_components
+wp-content/themes/mitfoerstejob/node_modules

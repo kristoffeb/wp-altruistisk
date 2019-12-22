@@ -1,8 +1,8 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Type\Meta;
+namespace Mitfoerstejob\Content\Admin\Type\Meta;
 
-use Kristoffe\Content\Admin\Helpers\Form\Meta_Box;
+use Mitfoerstejob\Content\Admin\Helpers\Form\Meta_Box;
 
 abstract class Meta_Page {
 

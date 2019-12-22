@@ -6,7 +6,7 @@
  *
  */
 
-namespace Kristoffe\Admin;
+namespace Mitfoerstejob\Admin;
 
 /**
  * Adds custom js and css for admin panel

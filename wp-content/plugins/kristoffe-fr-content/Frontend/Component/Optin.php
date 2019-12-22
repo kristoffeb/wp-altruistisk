@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Component;
+namespace Mitfoerstejob\Content\Frontend\Component;
 
-use Kristoffe\Content\Admin\Settings;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Settings;
+use Mitfoerstejob\Content\Main;
 
 class Optin {
 

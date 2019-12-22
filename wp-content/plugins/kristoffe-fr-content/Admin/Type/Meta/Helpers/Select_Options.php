@@ -1,6 +1,6 @@
 <?php
 
-namespace Kristoffe\Content\Admin\Type\Meta\Helpers;
+namespace Mitfoerstejob\Content\Admin\Type\Meta\Helpers;
 
 
 class Select_Options {

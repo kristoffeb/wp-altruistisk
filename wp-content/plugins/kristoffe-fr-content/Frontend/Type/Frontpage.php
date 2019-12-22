@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Type;
+namespace Mitfoerstejob\Content\Frontend\Type;
 
-use Kristoffe\Content\Frontend\Component;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Frontend\Component;
+use Mitfoerstejob\Content\Main;
 
 class Frontpage implements Page {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Type;
+namespace Mitfoerstejob\Content\Frontend\Type;
 
 
 interface Page {

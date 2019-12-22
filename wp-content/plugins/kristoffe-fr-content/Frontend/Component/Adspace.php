@@ -1,10 +1,10 @@
 <?php
 
-namespace Kristoffe\Content\Frontend\Component;
+namespace Mitfoerstejob\Content\Frontend\Component;
 
-use Kristoffe\Content\Admin\Type\Meta;
-use Kristoffe\Content\Frontend\Data\Data_Holder_Factory;
-use Kristoffe\Content\Main;
+use Mitfoerstejob\Content\Admin\Type\Meta;
+use Mitfoerstejob\Content\Frontend\Data\Data_Holder_Factory;
+use Mitfoerstejob\Content\Main;
 
 class Adspace {
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kristoffe\Content\Frontend;
+namespace Mitfoerstejob\Content\Frontend;
 
-use Kristoffe\Content\Frontend\Component;
-use Kristoffe\Content\Frontend\Type;
+use Mitfoerstejob\Content\Frontend\Component;
+use Mitfoerstejob\Content\Frontend\Type;
 
 class Bootstrap {
 
