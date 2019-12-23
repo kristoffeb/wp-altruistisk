@@ -9,7 +9,7 @@
  * @link http://codex.wordpress.org/Plugin_API/Action_Reference
  */
 
-namespace Mitfoerstejob;
+namespace Heartland;
 
 /**
  * Loads css in the head and js at the end of body

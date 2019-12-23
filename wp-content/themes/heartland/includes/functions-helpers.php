@@ -7,7 +7,7 @@
  *
  */
 
-namespace Mitfoerstejob;
+namespace Heartland;
 
 /**
  * Special excerpt
@@ -42,7 +42,7 @@ add_filter( 'excerpt_more', __NAMESPACE__ . '\new_excerpt_more' );
 /**
  * Get taxonomies terms links
  */
-function mitfoerstejob_taxonomies_terms_links() {
+function heartland_taxonomies_terms_links() {
     global $post, $post_id;
 
     // get post by post id
@@ -75,18 +75,18 @@ function mitfoerstejob_taxonomies_terms_links() {
 /**
  * Get post thumbnail
  */
-function mitfoerstejob_get_post_thumbnail( $post_id, $size = 'full' ) {
+function heartland_get_post_thumbnail( $post_id, $size = 'full' ) {
 	if( has_post_thumbnail( $post_id ) ) {
 		$source = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), $size );
 		$thumbnail = $source[0];
 	} else {
-		$thumbnail = mitfoerstejob_get_default_image_url();
+		$thumbnail = heartland_get_default_image_url();
 	}
 
 	return $thumbnail;
 }
 
-function mitfoerstejob_get_default_image_url( $type = '' ) {
+function heartland_get_default_image_url( $type = '' ) {
 	return get_template_directory_uri() . '/img/default-image.png';
 }
 

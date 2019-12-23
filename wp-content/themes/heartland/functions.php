@@ -8,7 +8,7 @@
  *
  */
 
-namespace Mitfoerstejob;
+namespace Heartland;
 
 /**
  * Theme setup

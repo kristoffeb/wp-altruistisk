@@ -6,7 +6,7 @@
  *
  */
 
-namespace Mitfoerstejob\Admin;
+namespace Heartland\Admin;
 
 /**
  * Adds custom js and css for admin panel

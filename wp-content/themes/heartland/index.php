@@ -7,7 +7,7 @@
  *
  */
 
-namespace Mitfoerstejob;
+namespace Heartland;
 ?>
 
 <?php echo get_header(); ?>

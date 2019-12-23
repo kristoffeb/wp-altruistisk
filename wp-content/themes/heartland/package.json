@@ -1,17 +1,17 @@
 {
-  "name": "mitfoerstejob",
+  "name": "heartland",
   "version": "0.0.1",
   "description": "A WordPress/Gulp/Sass starter kit.",
-  "homepage": "https://github.com/kristoffeb/wp-mitfoerstejob",
+  "homepage": "https://github.com/kristoffeb/wp-heartland",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kristoffeb/wp-mitfoerstejob.git"
+    "url": "https://github.com/kristoffeb/wp-heartland.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "Mitfoerstejob Biglete": "kristoffe.biglete@gmail.com"
+    "Heartland Biglete": "kristoffe.biglete@gmail.com"
   },
   "license": "GNU General Public Licence 2.0",
   "main": "gulpfile.js",

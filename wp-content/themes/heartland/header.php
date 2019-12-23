@@ -7,7 +7,7 @@
  *
  */
 
-namespace Mitfoerstejob;
+namespace Heartland;
 ?>
 
 <!DOCTYPE html>

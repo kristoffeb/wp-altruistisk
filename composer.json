@@ -43,7 +43,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Mitfoerstejob\\Content\\": "wp-content/plugins/mitfoerstejob-content/"
+			"Heartland\\Content\\": "wp-content/plugins/heartland-content/"
 		}
 	}
 }
