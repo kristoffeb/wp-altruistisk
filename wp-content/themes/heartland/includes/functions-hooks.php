@@ -23,12 +23,12 @@ function enqueue() {
 	}
 
 	// Register stylesheet
-	wp_register_style( __NAMESPACE__ . '-css', get_template_directory_uri() . '/assets/dist/main' . $suffix . 'css', false, '1.0', 'all' );
-	wp_enqueue_style( __NAMESPACE__ . '-css' );
+	wp_register_style( 'main', THEME_URI . '/assets/dist/main' . $suffix . 'css', [], filemtime( get_stylesheet_directory() . '/assets/dist/main' . $suffix . 'css' ), FALSE );
+	wp_enqueue_style( 'main' );
 
 	// Adding scripts in the footer
-	wp_register_script( __NAMESPACE__ . '-scripts', get_template_directory_uri() . '/assets/dist/scripts.min.js', [ 'jquery' ], '1.0', true );
-	wp_enqueue_script( __NAMESPACE__ . '-scripts' );
+	wp_register_script( 'scripts', THEME_URI . '/assets/dist/scripts.min.js', [ 'jquery' ], filemtime( get_stylesheet_directory() . '/assets/dist/scripts' . $suffix . 'js' ), TRUE );
+	wp_enqueue_script( 'scripts' );
 
 	// Inbuilt comment reply
 	if ( is_singular() && comments_open() && ( get_option( 'thread_comments' ) == 1 ) ) {

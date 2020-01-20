@@ -56,6 +56,12 @@ function theme_setup() {
 	register_nav_menus(	array(
 		'main-nav' => __( 'Main Navigation', THEMEDOMAIN ),
 	) );
+
+	// Footer area
+	register_sidebar( [
+		'name' => __( 'Footer Area', THEMEDOMAIN ),
+		'id'   => 'sidebar-footer',
+	] );
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );

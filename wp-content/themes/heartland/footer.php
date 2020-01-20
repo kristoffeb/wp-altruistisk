@@ -13,8 +13,12 @@
 
 	<footer class="footer" role="content-info">
 
-		<div class="inner-grid">
-			<?php echo _e( '&copy; 2017 Texte | Tekst', THEMEDOMAIN ); ?>
+		<div class="grid">
+			<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
+				<ul id="sidebar">
+        			<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+				</ul>
+			<?php endif; ?>
 		</div>
 
 	</footer>
