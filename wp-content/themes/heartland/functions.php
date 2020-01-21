@@ -20,6 +20,9 @@ function theme_setup() {
 		define( 'THEMEDOMAIN', __NAMESPACE__ );
 	}
 
+	define( 'THEME_DIR', dirname( __FILE__ ) );
+	define( 'THEME_URI', str_replace( ['http:'], [''], get_template_directory_uri() ) );
+
 	// Loads theme languages
 	load_theme_textdomain( THEMEDOMAIN, get_template_directory() . '/languages' );
 
@@ -34,12 +37,10 @@ function theme_setup() {
 
 	// Theme support
 	add_theme_support( 'custom-header' );
-	add_theme_support( 'custom-background' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'menus' );
 	add_theme_support( 'automatic_feed_links' );
 	add_theme_support( 'html5', [ 'search-form', 'comment-list', 'comment-form', 'gallery', 'caption' ] );
-	add_theme_support( 'woocommerce' );
 
 	// Image sizes
 	set_post_thumbnail_size( 125, 125, true ); // default thumb size

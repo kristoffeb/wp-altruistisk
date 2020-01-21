@@ -1,0 +1,8 @@
+.wp-block-group {
+	@include padding('top-bottom', 'xlarge');
+}
+
+.custom-section--green {
+	background-color: $green;
+	color: $white;
+}

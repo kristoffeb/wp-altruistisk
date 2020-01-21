@@ -26,25 +26,3 @@ namespace Heartland;
 	<![endif]-->
 
 </head>
-
-<body <?php body_class(); ?>>
-
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', THEMEDOMAIN ); ?></a>
-
-	<?php do_action( THEMEDOMAIN . '-before_header' ); ?>
-
-	<header class="header" role="banner">
-
-		<div class="inner-grid">
-
-			<?php get_template_part( 'partial/navigation', 'main' ); ?>
-
-		</div>
-
-	</header> <!-- #header -->
-
-	<?php do_action( THEMEDOMAIN . '-after_header' ); ?>
-
-	<div id="content" class="main-content">
-
-	<?php /* WP header.php break point */ ?>

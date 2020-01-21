@@ -8,7 +8,7 @@ use Heartland\Content\Frontend\Type;
 class Bootstrap {
 
 	public function __construct() {
-		$this->init();
+		// $this->init();
 	}
 
 	/**
@@ -19,7 +19,7 @@ class Bootstrap {
 		new Component\Header();
 		// new Component\Footer();
 
-		add_action( 'wp', [ $this, 'load_pages' ], 10 );
+		// add_action( 'wp', [ $this, 'load_pages' ], 10 );
 	}
 
 	public function load_pages() {

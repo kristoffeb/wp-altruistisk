@@ -1,0 +1,64 @@
+body {
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+    @include media($desktop) {
+        padding: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    @include title;
+	@include padding('bottom', 'small');
+}
+
+p {
+    @include text;
+	@include padding('bottom', 'small');
+}
+
+li {
+    @include text;
+}
+
+.inner-grid,
+[class*=inner-container] {
+	@include grid;
+}
+
+.wp-block-columns.wp-block-columns {
+    margin: 0;
+}
+
+.wp-block-button {
+    .wp-block-button__link {
+		@include button;
+    }
+}
+
+.screen-reader-text{
+	@include screen-reader-text();
+
+	h1{
+		@include screen-reader-text();
+	}
+}
+
+.hide-mobile {
+    @include media($mobile) {
+        display: none;
+    }
+}
+
+.show-mobile {
+    @include media($mobile) {
+        display: block;
+    }
+}

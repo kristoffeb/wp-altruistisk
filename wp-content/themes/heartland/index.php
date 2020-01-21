@@ -25,6 +25,8 @@ namespace Heartland;
 
         <main class="main" role="main">
 
+            <?php the_content(); ?>
+
             <?php do_action( THEMEDOMAIN . '-main_content' ); ?>
 
         </main>

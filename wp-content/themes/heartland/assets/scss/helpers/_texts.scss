@@ -1,12 +1,15 @@
 @mixin title($size: 'normal') {
-	font-family: 'Arvo';
+	font-family: 'Heebo';
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
 
 	@if ($size == 'small') {
 		font-size: rem(13);
 	}
 
 	@if ($size == 'normal') {
-		font-size: rem(24);
+		font-size: rem(28);
 		margin-bottom: rem(20);
 	}
 
@@ -17,7 +20,9 @@
 }
 
 @mixin text($size: 'normal', $weight: 'normal') {
-	font-family: 'maison_neuebook';
+	font-family: 'Heebo';
+	font-weight: 300;
+	letter-spacing: 0.08rem;
 
 	@if ($size == 'small') {
 		font-size: rem(13);

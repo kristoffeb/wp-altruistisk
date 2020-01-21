@@ -1,0 +1,15 @@
+.home {
+	.wp-block-cover {
+		min-height: rem(600);
+
+		&__inner-container {
+			align-self: flex-end;
+			@include padding('bottom', 'large');
+			@include text('large');
+		}
+
+		.wp-block-button__link {
+			@include button('large');
+		}
+	}
+}

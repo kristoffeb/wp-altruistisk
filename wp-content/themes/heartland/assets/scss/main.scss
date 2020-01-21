@@ -9,8 +9,9 @@
 @import 'helpers/texts';
 
 /* Components */
-// @import 'components/article';
+@import 'components/section';
 
 
 /* Layouts */
-// @import 'layouts/404';
+@import 'layouts/global';
+@import 'layouts/frontpage';

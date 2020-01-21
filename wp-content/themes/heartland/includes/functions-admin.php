@@ -18,4 +18,11 @@ function enqueue() {
 
 add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\enqueue', 1 );
 
-// add_editor_style( '/assets/css/admin-editor.css' );
+/**
+ * Gutenberg editor styling
+ */
+function enqueue_editor_scripts() {
+	wp_enqueue_style( 'editor-style', THEME_URI . '/assets/dist/editor-style.css', [], filemtime( get_stylesheet_directory() . '/assets/dist/editor-style.css' ), FALSE );
+}
+
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_editor_scripts' );

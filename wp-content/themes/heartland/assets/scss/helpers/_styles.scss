@@ -1,29 +1,29 @@
 @mixin margin($area: 'bottom', $size: 'small') {
 	@if ($area == 'bottom') {
 		@if ($size == 'small') {
-			margin-bottom: rem(25);
+			margin-bottom: rem(15);
 		}
 
 		@if ($size == 'normal') {
-			margin-bottom: rem(50);
+			margin-bottom: rem(25);
 		}
 
 		@if ($size == 'large') {
-			margin-bottom: rem(120);
+			margin-bottom: rem(50);
 		}
 	}
 
 	@if ($area == 'top') {
 		@if ($size == 'small') {
-			margin-top: rem(25);
+			margin-top: rem(15);
 		}
 
 		@if ($size == 'normal') {
-			margin-top: rem(50);
+			margin-top: rem(25);
 		}
 
 		@if ($size == 'large') {
-			margin-top: rem(120);
+			margin-top: rem(50);
 		}
 	}
 }
@@ -31,104 +31,122 @@
 @mixin padding($area: 'top-bottom', $size: 'normal') {
 	@if ($area == 'top-bottom') {
 		@if ($size == 'small') {
+			padding-top: rem(15);
+			padding-bottom: rem(15);
+		}
+
+		@if ($size == 'normal') {
 			padding-top: rem(25);
 			padding-bottom: rem(25);
 		}
 
-		@if ($size == 'normal') {
+		@if ($size == 'large') {
 			padding-top: rem(50);
 			padding-bottom: rem(50);
 		}
 
-		@if ($size == 'large') {
-			padding-top: rem(120);
-			padding-bottom: rem(120);
-		}
-
 		@if ($size == 'xlarge') {
-			padding-top: rem(180);
-			padding-bottom: rem(180);
+			padding-top: rem(80);
+			padding-bottom: rem(80);
 		}
 	}
 
 	@if ($area == 'top') {
 		@if ($size == 'small') {
-			padding-top: rem(25);
+			padding-top: rem(15);
 		}
 
 		@if ($size == 'normal') {
-			padding-top: rem(50);
+			padding-top: rem(25);
 		}
 
 		@if ($size == 'large') {
-			padding-top: rem(120);
+			padding-top: rem(50);
 		}
 
 		@if ($size == 'xlarge') {
-			padding-top: rem(180);
+			padding-top: rem(80);
 		}
 	}
 
 	@if ($area == 'bottom') {
 		@if ($size == 'small') {
-			padding-bottom: rem(25);
+			padding-bottom: rem(15);
 		}
 
 		@if ($size == 'normal') {
-			padding-bottom: rem(50);
+			padding-bottom: rem(25);
 		}
 
 		@if ($size == 'large') {
-			padding-bottom: rem(120);
+			padding-bottom: rem(50);
 		}
 
 		@if ($size == 'xlarge') {
-			padding-bottom: rem(180);
+			padding-bottom: rem(80);
 		}
 	}
 
 	@if ($area == 'left-right') {
 		@if ($size == 'small') {
+			padding-left: rem(15);
+			padding-right: rem(15);
+		}
+
+		@if ($size == 'normal') {
 			padding-left: rem(25);
 			padding-right: rem(25);
 		}
 
-		@if ($size == 'normal') {
+		@if ($size == 'large') {
 			padding-left: rem(50);
 			padding-right: rem(50);
-		}
-
-		@if ($size == 'large') {
-			padding-left: rem(120);
-			padding-right: rem(120);
 		}
 	}
 
 	@if ($area == 'left') {
 		@if ($size == 'small') {
-			padding-left: rem(25);
+			padding-left: rem(15);
 		}
 
 		@if ($size == 'normal') {
-			padding-left: rem(50);
+			padding-left: rem(25);
 		}
 
 		@if ($size == 'large') {
-			padding-left: rem(120);
+			padding-left: rem(50);
 		}
 	}
 
 	@if ($area == 'right') {
 		@if ($size == 'small') {
-			padding-right: rem(25);
+			padding-right: rem(15);
 		}
 
 		@if ($size == 'normal') {
-			padding-right: rem(50);
+			padding-right: rem(25);
 		}
 
 		@if ($size == 'large') {
-			padding-right: rem(120);
+			padding-right: rem(50);
 		}
+	}
+}
+
+@mixin button($size: 'normal') {
+	background-color: $pink;
+	color: $white;
+
+	@if ($size == 'normal') {
+		font-size: rem(20);
+		padding: rem(15) rem(28);
+		@include margin('bottom', 'small');
+	}
+
+	@if ($size == 'large') {
+		font-size: rem(40);
+		padding: rem(25) rem(60);
+		border-radius: rem(70);
+		@include margin('bottom', 'normal');
 	}
 }

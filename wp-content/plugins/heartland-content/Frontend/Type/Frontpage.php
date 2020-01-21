@@ -13,8 +13,8 @@ class Frontpage implements Page {
 
 	public function init() {
 		add_action( 'template_include', [ $this, 'redirect_to_index' ] );
-		add_action( THEMEDOMAIN . '-main_content', [ $this, 'hero' ] );
-		add_action( THEMEDOMAIN . '-main_content', [ $this, 'grid' ] );
+		// add_action( THEMEDOMAIN . '-main_content', [ $this, 'hero' ] );
+		// add_action( THEMEDOMAIN . '-main_content', [ $this, 'grid' ] );
 	}
 
 	public function redirect_to_index() {

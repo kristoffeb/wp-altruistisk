@@ -9,8 +9,6 @@
 ?>
 	<?php // WP footer.php break point ?>
 
-	</div> <!-- #content .main-content -->
-
 	<footer class="footer" role="content-info">
 
 		<div class="grid">
@@ -26,4 +24,3 @@
 <?php wp_footer(); ?>
 
 </body>
-</html>
