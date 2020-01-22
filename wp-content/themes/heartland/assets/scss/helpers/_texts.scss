@@ -5,7 +5,8 @@
 	letter-spacing: 0.1rem;
 
 	@if ($size == 'small') {
-		font-size: rem(13);
+		font-size: rem(20);
+		text-transform: none;
 	}
 
 	@if ($size == 'normal') {
@@ -26,17 +27,16 @@
 
 	@if ($size == 'small') {
 		font-size: rem(13);
+		line-height: rem(20);
 	}
 
 	@if ($size == 'normal') {
 		font-size: rem(16);
+		line-height: rem(24);
 	}
 
 	@if ($size == 'large') {
 		font-size: rem(24);
-	}
-
-	@if ($weight == 'bold') {
-		font-family: 'maison_neuebold';
+		line-height: rem(32);
 	}
 }

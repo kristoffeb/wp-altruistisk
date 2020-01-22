@@ -55,7 +55,7 @@ class Latest_Posts {
 				'permalink'    => get_permalink( $post->ID ),
 				'title'        => get_the_title( $post->ID ),
 				'excerpt'      => get_the_excerpt( $post->ID ),
-				'image'        => get_the_post_thumbnail_url( $post->ID ),
+				'image'        => get_the_post_thumbnail_url( $post->ID, 'full' ),
 				'category'     => $this->get_category( $post->ID ),
 				'date'         => get_the_date( get_option( 'date_format' ), $post->ID ),
 			];

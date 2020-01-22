@@ -133,8 +133,7 @@
 	}
 }
 
-@mixin button($size: 'normal') {
-	background-color: $pink;
+@mixin button($size: 'normal', $color: 'pink') {
 	color: $white;
 
 	@if ($size == 'normal') {
@@ -148,5 +147,13 @@
 		padding: rem(25) rem(60);
 		border-radius: rem(70);
 		@include margin('bottom', 'normal');
+	}
+
+	@if ($color == 'pink') {
+		background-color: $pink;
+	}
+
+	@if ($color == 'green') {
+		background-color: $green;
 	}
 }

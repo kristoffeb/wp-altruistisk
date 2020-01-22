@@ -6,41 +6,39 @@ use Heartland\Content\Main;
 
 	<div class="content">
 
-		<ul class="items-list">
+		<?php foreach ( $posts as $index => $post ) : ?>
 
-			<?php foreach ( $posts as $index => $post ) : ?>
+			<article class="post">
 
-				<article class="item">
+				<?php if ( ! empty( $post['image'] ) ) : ?>
+                    <a href="<?php echo $post['permalink']; ?>">
+						<img src="<?php echo $post['image']; ?>" alt="<?php echo $post['title']; ?>" class="featured-image" />
+					</a>
+                <?php endif; ?>
 
-					<?php if ( ! empty( $post['image'] ) ) : ?>
-                        <a href="<?php echo $post['permalink']; ?>">
-							<img src="<?php echo $post['image']; ?>" alt="<?php echo $post['title']; ?>" />
+                <div class="title">
+                    <h3>
+						<a href="<?php echo $post['permalink']; ?>">
+							<?php echo $post['title']; ?>
 						</a>
-                    <?php endif; ?>
+					</h3>
+                </div>
 
-                    <div class="title">
-                        <h3>
-							<a href="<?php echo $post['permalink']; ?>">
-								<?php echo $post['title']; ?>
-							</a>
-						</h3>
-                    </div>
+                <div class="excerpt">
+                    <?php echo wpautop( $post['excerpt'] ); ?>
+                </div>
 
-                    <div class="excerpt">
-                        <?php echo wpautop( $post['excerpt'] ); ?>
-                    </div>
+				<div class="meta">
+					<?php echo $post['category']; ?>
 
-					<div class="meta">
-						<?php echo $post['category']; ?>
-
+					<div class="date">
 						<?php echo $post['date']; ?>
 					</div>
+				</div>
 
-            </article>
+        	</article>
 
-			<?php endforeach; ?>
-
-		</ul>
+		<?php endforeach; ?>
 
     </div>
 

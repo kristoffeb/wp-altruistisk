@@ -1,0 +1,52 @@
+.latest-posts {
+	.content {
+		@include flex;
+		align-items: center;
+		justify-content: space-between;
+		@include padding('bottom', 'large');
+	}
+
+	.post {
+		width: 31%;
+	}
+
+	.featured-image {
+		width: 100%;
+		@include margin('bottom', 'normal');
+	}
+
+	.title {
+		h3 {
+			@include title('small');
+			margin: 0;
+		}
+
+		a {
+			color: $black;
+		}
+	}
+
+	.excerpt {
+		@include text;
+	}
+
+	.meta {
+		&, * {
+			@include text('small');
+			color: $warmgray;
+		}
+
+		ul {
+			display: inline-block;
+		}
+
+		.date {
+			display: inline-block;
+
+			&:before {
+				content: '\2022';
+				margin: 0 rem(6);
+			}
+		}
+	}
+}
