@@ -8,7 +8,7 @@ use Heartland\Content\Frontend\Type;
 class Bootstrap {
 
 	public function __construct() {
-		// $this->init();
+		$this->init();
 	}
 
 	/**

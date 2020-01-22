@@ -7,8 +7,6 @@
  *
  */
 ?>
-	<?php // WP footer.php break point ?>
-
 	<footer class="footer" role="content-info">
 
 		<div class="grid">
@@ -21,6 +19,8 @@
 
 	</footer>
 
-<?php wp_footer(); ?>
+	<?php wp_footer(); ?>
 
 </body>
+
+</html>

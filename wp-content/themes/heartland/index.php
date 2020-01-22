@@ -12,8 +12,6 @@ namespace Heartland;
 
 <?php echo get_header(); ?>
 
-<body <?php body_class(); echo apply_filters( THEMEDOMAIN . '-body_attributes', '', 10 ); ?>>
-
     <?php do_action( THEMEDOMAIN . '-main-navigation' ); ?>
 
     <section
@@ -39,8 +37,4 @@ namespace Heartland;
 
     <?php get_template_part( 'templates/admin/adminbar' ); ?>
 
-    <?php echo get_footer(); ?>
-
-</body>
-
-</html>
+<?php echo get_footer(); ?>

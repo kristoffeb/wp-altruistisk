@@ -26,6 +26,34 @@
 			margin-top: rem(50);
 		}
 	}
+
+	@if ($area == 'left') {
+		@if ($size == 'small') {
+			margin-left: rem(15);
+		}
+
+		@if ($size == 'normal') {
+			margin-left: rem(25);
+		}
+
+		@if ($size == 'large') {
+			margin-left: rem(50);
+		}
+	}
+
+	@if ($area == 'right') {
+		@if ($size == 'small') {
+			margin-right: rem(15);
+		}
+
+		@if ($size == 'normal') {
+			margin-right: rem(25);
+		}
+
+		@if ($size == 'large') {
+			margin-right: rem(50);
+		}
+	}
 }
 
 @mixin padding($area: 'top-bottom', $size: 'normal') {
@@ -136,9 +164,16 @@
 @mixin button($size: 'normal', $color: 'pink') {
 	color: $white;
 
+	@if ($size == 'small') {
+		font-size: rem(16);
+		padding: rem(8) rem(24);
+		border-radius: rem(35);
+	}
+
 	@if ($size == 'normal') {
 		font-size: rem(20);
 		padding: rem(15) rem(28);
+		border-radius: rem(35);
 		@include margin('bottom', 'small');
 	}
 

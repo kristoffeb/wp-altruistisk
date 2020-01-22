@@ -1,0 +1,46 @@
+header.header {
+	background-color: $green;
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+
+	.inner-grid {
+		@include padding('top-bottom', 'normal');
+		@include flex;
+		justify-content: space-between;
+	}
+
+	#logo {
+		width: rem(275);
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.description {
+		@include text('small');
+		color: $pink;
+		margin-top: rem(6);
+		display: block;
+	}
+
+	.menu {
+		@include flex;
+	}
+
+	.menu-item {
+		@include padding('left', 'normal');
+
+		&:last-child {
+			@include button('small');
+			@include margin('left', 'normal');
+		}
+
+		a {
+			@include text;
+			color: $white;
+		}
+	}
+}
