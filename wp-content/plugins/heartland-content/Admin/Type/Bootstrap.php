@@ -9,6 +9,6 @@ class Bootstrap {
 	 */
 	public function init() {
 		// Meta
-		new Meta\Project();
+		// new Meta\Project();
 	}
 }

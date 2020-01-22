@@ -11,6 +11,8 @@ class Bootstrap {
 	}
 
 	public function init() {
-		new Type\Project();
+		// new Type\Project();
+
+		new Shortcode\Latest_Posts();
 	}
 }

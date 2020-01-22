@@ -16,7 +16,7 @@ class Bootstrap {
 	 */
 	public function init() {
 		// Global
-		new Component\Header();
+		// new Component\Header();
 		// new Component\Footer();
 
 		// add_action( 'wp', [ $this, 'load_pages' ], 10 );
@@ -26,7 +26,7 @@ class Bootstrap {
 		$page_rendering_classes = [
 			// Type\About::class,
 			// Type\Blog::class,
-			Type\Frontpage::class,
+			// Type\Frontpage::class,
 			// Type\Post::class,
 			// Type\Single::class,
 		];
