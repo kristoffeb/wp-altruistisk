@@ -14,6 +14,7 @@
 		"wpackagist-plugin/glue-for-yoast-seo-amp": "0.5.*",
 		"wpackagist-plugin/gutenberg": "7.3.*",
 		"wpackagist-plugin/hyperdb": "1.6",
+		"wpackagist-plugin/menu-image": "2.9.*",
 		"wpackagist-plugin/redirection": "4.6.*",
 		"wpackagist-plugin/wordpress-seo": "12.9.*"
 	},

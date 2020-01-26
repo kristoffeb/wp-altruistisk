@@ -1,0 +1,70 @@
+footer.footer {
+	background-color: $lightgray;
+	@include padding('top-bottom', 'large');
+
+	.widgettitle {
+		display: none;
+	}
+
+	#sidebar {
+		@include flex;
+		align-items: flex-start;
+	}
+
+	.widget {
+		&:nth-child(1) {
+			width: 50%;
+			margin-bottom: rem(70);
+		}
+
+		&:nth-child(2) {
+			width: 50%;
+			margin-bottom: rem(70);
+			color: $mediumgray;
+			text-align: right;
+
+			p {
+				@include title('large');
+				font-size: rem(40);
+			}
+		}
+
+		&:nth-child(3) {
+			width: 20%;
+
+			a {
+				color: $black;
+				@include text('small');
+				text-decoration: underline;
+			}
+		}
+
+		&:nth-child(4) {
+			width: 20%;
+
+			p {
+				@include text('small');
+			}
+
+			a {
+				color: $black;
+				@include text('small');
+				text-decoration: underline;
+			}
+		}
+
+		&:nth-child(5) {
+			width: 60%;
+			text-align: right;
+
+			.menu {
+				@include flex;
+				justify-content: flex-end;
+			}
+
+			li {
+				@include margin('left', 'normal');
+			}
+		}
+	}
+}

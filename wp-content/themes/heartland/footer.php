@@ -9,7 +9,7 @@
 ?>
 	<footer class="footer" role="content-info">
 
-		<div class="grid">
+		<div class="inner-grid">
 			<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
 				<ul id="sidebar">
         			<?php dynamic_sidebar( 'sidebar-footer' ); ?>
