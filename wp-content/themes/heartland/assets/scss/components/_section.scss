@@ -1,6 +1,4 @@
 .wp-block-group {
-	@include padding('top-bottom', 'xlarge');
-
 	.wp-block-button .wp-block-button__link {
 		@include button('normal', 'green');
 	}

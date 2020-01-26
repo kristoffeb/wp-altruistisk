@@ -1,0 +1,30 @@
+.single,
+.page {
+	main.main {
+		padding-top: rem(125);
+		@include padding('bottom', 'large');
+	}
+
+	.wp-block-group {
+		&__inner-container {
+			padding-left: rem(190);
+			padding-right: rem(190);
+		}
+	}
+
+	&:not(.home) {
+		h2 {
+			@include title('large');
+			font-size: rem(65);
+			@include padding('top', 'large');
+			text-align: center;
+		}
+	}
+
+	.wp-block-embed-spotify {
+		&, iframe {
+			max-height: rem(380);
+			overflow: hidden;
+		}
+	}
+}

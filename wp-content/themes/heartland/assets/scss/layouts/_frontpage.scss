@@ -1,4 +1,18 @@
-.home {
+.page.home {
+	main.main {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.wp-block-group {
+		@include padding('top-bottom', 'xlarge');
+
+		&__inner-container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
 	.wp-block-cover {
 		min-height: 90vh;
 

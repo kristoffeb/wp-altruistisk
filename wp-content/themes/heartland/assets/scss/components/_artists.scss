@@ -1,0 +1,31 @@
+.artists {
+	width: $grid-width;
+	margin-left: - rem(190);
+
+	.content {
+		@include flex;
+		align-items: center;
+		justify-content: space-between;
+		@include padding('top-bottom', 'large');
+	}
+
+	.post {
+		width: 30%;
+	}
+
+	.featured-image {
+		width: 100%;
+		@include margin('bottom', 'small');
+	}
+
+	.title {
+		h3 {
+			@include title('small');
+			@include margin('bottom', 'normal');
+		}
+
+		a {
+			color: $black;
+		}
+	}
+}

@@ -40,6 +40,7 @@ function theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'menus' );
 	add_theme_support( 'automatic_feed_links' );
+	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'html5', [ 'search-form', 'comment-list', 'comment-form', 'gallery', 'caption' ] );
 
 	// Image sizes
