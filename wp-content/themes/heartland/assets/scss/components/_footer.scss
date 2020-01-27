@@ -14,12 +14,12 @@ footer.footer {
 	.widget {
 		&:nth-child(1) {
 			width: 50%;
-			margin-bottom: rem(70);
+			@include margin('bottom');
 		}
 
 		&:nth-child(2) {
 			width: 50%;
-			margin-bottom: rem(70);
+			@include margin('bottom');
 			color: $mediumgray;
 			text-align: right;
 

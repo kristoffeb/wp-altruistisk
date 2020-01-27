@@ -1,0 +1,20 @@
+.categories {
+	@include padding('top-bottom');
+
+	ul {
+		@include flex;
+		justify-content: space-between;
+	}
+
+	li {
+		width: 17%;
+
+		a {
+			@include button;
+			padding: rem(15);
+			color: $white;
+			display: block;
+			text-align: center;
+		}
+	}
+}

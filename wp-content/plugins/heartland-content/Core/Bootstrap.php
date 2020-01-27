@@ -13,7 +13,10 @@ class Bootstrap {
 	public function init() {
 		new Type\Artist();
 
+		new Taxonomy\Program();
+
 		new Shortcode\Artists();
+		new Shortcode\Categories();
 		new Shortcode\Latest_Posts();
 	}
 }

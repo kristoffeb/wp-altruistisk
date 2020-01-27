@@ -45,14 +45,7 @@ function theme_setup() {
 
 	// Image sizes
 	set_post_thumbnail_size( 125, 125, true ); // default thumb size
-	add_image_size( __NAMESPACE__ . '-small',            300, 169, true );   // 16/9 small
-	add_image_size( __NAMESPACE__ . '-loop',             330, 230, true );   // 16/9 used in the loop
-	add_image_size( __NAMESPACE__ . '-medium',           640, 369, true );   // 16/9 medium
-	add_image_size( __NAMESPACE__ . '-large',            800, 450, true );   // 16/9 large
-	add_image_size( __NAMESPACE__ . '-tile-large',       725, 725, true );   // Tile large
-	add_image_size( __NAMESPACE__ . '-tile-medium',      320, 320, true );   // Tile large
-	add_image_size( __NAMESPACE__ . '-portfolio-medium', 370, 9999 );  // Portfolio medium
-	add_image_size( __NAMESPACE__ . '-portfolio-large',  1240, 9999 ); // Portfolio large
+	add_image_size( 'grid-normal', 350, 350, true );
 
 	// Navigation
 	register_nav_menus(	array(

@@ -15,6 +15,7 @@
 		"wpackagist-plugin/gutenberg": "7.3.*",
 		"wpackagist-plugin/hyperdb": "1.6",
 		"wpackagist-plugin/menu-image": "2.9.*",
+		"wpackagist-plugin/regenerate-thumbnails": "3.1.*",
 		"wpackagist-plugin/redirection": "4.6.*",
 		"wpackagist-plugin/wordpress-seo": "12.9.*"
 	},

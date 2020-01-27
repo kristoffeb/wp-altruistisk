@@ -27,7 +27,7 @@ class Artist {
 				'public'            => TRUE,
 				'has_archive'       => TRUE,
 				'hierarchical'      => TRUE,
-				'taxonomies'        => [ 'category' ],
+				'taxonomies'        => [ 'program' ],
 				'show_ui'           => TRUE,
 				'show_in_nav_menus' => TRUE,
 				'show_in_rest'		=> TRUE,

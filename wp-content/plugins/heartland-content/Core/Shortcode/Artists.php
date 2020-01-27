@@ -3,10 +3,9 @@
 namespace Heartland\Content\Core\Shortcode;
 
 use Heartland\Content\Main;
+use Heartland\Content\Core\Taxonomy;
 
 class Artists {
-
-	const SETTINGS_PREFIX = 'falconio_insights-hub_settings_';
 
 	public function __construct() {
 		add_shortcode( 'artists', [ $this, 'shortcode' ] );
@@ -15,10 +14,11 @@ class Artists {
 	public function shortcode( $atts = [], $content = NULL, $tag = '' ) {
 
 		$atts = shortcode_atts( [
-			'number' => '-1'
+			'number'  => '-1',
+			'program' => 'music',
 		], $atts, $tag );
 
-		$posts = $this->get_posts( $atts['number'] );
+		$posts = $this->get_posts( $atts['number'], $atts['program'] );
 
 		ob_start();
 
@@ -33,12 +33,19 @@ class Artists {
 		return $content;
 	}
 
-	public function get_posts( $limit ) {
+	public function get_posts( $limit, $category ) {
 
 		$args = [
 			'posts_per_page' => $limit,
 			'post_type'      => 'artist',
-		];
+			'tax_query'      => [
+				[
+		            'taxonomy' => Taxonomy\Program::TAXONOMY,
+		            'field'    => 'slug',
+		            'terms'    => $category,
+				],
+			],
+        ];
 
 		$query = new \WP_Query( $args );
 
@@ -54,7 +61,7 @@ class Artists {
 			$content[] = [
 				'permalink'    => get_permalink( $post->ID ),
 				'title'        => get_the_title( $post->ID ),
-				'image'        => get_the_post_thumbnail_url( $post->ID, 'full' ),
+				'image'        => get_the_post_thumbnail_url( $post->ID, 'grid-normal' ),
 				// 'category'     => $this->get_category( $post->ID ),
 			];
 
