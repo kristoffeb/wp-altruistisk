@@ -8,10 +8,7 @@
  	"require": {
 		"php": ">=5.4",
 		"johnpbloch/wordpress": "5.3.*",
-		"wpackagist-plugin/amp": "1.4.2",
-		"wpackagist-plugin/cmb2": "2.7.0",
 		"wpackagist-plugin/duplicate-post": "3.2.*",
-		"wpackagist-plugin/glue-for-yoast-seo-amp": "0.5.*",
 		"wpackagist-plugin/gutenberg": "7.3.*",
 		"wpackagist-plugin/hyperdb": "1.6",
 		"wpackagist-plugin/menu-image": "2.9.*",

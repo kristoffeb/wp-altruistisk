@@ -3,6 +3,7 @@
 namespace Heartland\Content\Core\Shortcode;
 
 use Heartland\Content\Main;
+use Heartland\Content\Core\Taxonomy;
 
 class Latest_Posts {
 
@@ -13,10 +14,11 @@ class Latest_Posts {
 	public function shortcode( $atts = [], $content = NULL, $tag = '' ) {
 
 		$atts = shortcode_atts( [
-			'number' => '3'
+			'number' => '3',
+			'category' => ''
 		], $atts, $tag );
 
-		$posts = $this->get_posts( $atts['number'] );
+		$posts = $this->get_posts( $atts['number'], $atts['category'] );
 
 		ob_start();
 
@@ -31,12 +33,27 @@ class Latest_Posts {
 		return $content;
 	}
 
-	public function get_posts( $limit ) {
+	public function get_posts( $limit, $category ) {
 
 		$args = [
 			'posts_per_page' => $limit,
 			'post_type'      => 'post',
 		];
+
+		if ( ! empty( $category ) ) {
+			$taxonomy_args = [
+				'tax_query' => [
+	        		[
+			            'taxonomy' => 'category',
+			            'field'    => 'slug',
+			            'terms'    => $category,
+					],
+				],
+			];
+
+			$args = array_merge( $args, $taxonomy_args );
+		}
+
 
 		$query = new \WP_Query( $args );
 

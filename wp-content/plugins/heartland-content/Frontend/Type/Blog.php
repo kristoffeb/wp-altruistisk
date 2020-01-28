@@ -2,8 +2,6 @@
 
 namespace Heartland\Content\Frontend\Type;
 
-use Heartland\Content\Admin\Type\Meta;
-use Heartland\Content\Frontend\Data\Data_Holder_Factory;
 use Heartland\Content\Main;
 
 class Blog implements Page {
@@ -12,25 +10,38 @@ class Blog implements Page {
 	private $factory;
 
 	public function matches_current_page() {
-		return is_home();
+		return is_home() || is_archive();
 	}
 
 	public function init() {
-		$this->factory = new Data_Holder_Factory( get_option( 'page_for_posts' ) );
 		add_action( THEMEDOMAIN . '-main_content', [ $this, 'grid' ] );
 	}
 
 	public function grid() {
-		$title      = get_the_title( get_option( 'page_for_posts' ) );
-		$shortcode  = do_shortcode( '[latest-posts number="-1"]' );
-		$categories = get_categories();
 
+		if ( is_home() ) {
+			$title      = get_the_title( get_option( 'page_for_posts' ) );
+			$shortcode  = do_shortcode( '[latest-posts number="-1"]' );
+			$categories = get_categories();
 
-		Main::get_template_part( 'Type/Blog.php', [
-			'title'      => $title,
-			'categories' => $this->get_formatted_terms( $categories ),
-			'grid'       => $shortcode,
-		] );
+			Main::get_template_part( 'Type/Blog.php', [
+				'title'      => $title,
+				'categories' => $this->get_formatted_terms( $categories ),
+				'grid'       => $shortcode,
+			] );
+		}
+
+		if ( is_archive() ) {
+			$title      = get_the_archive_title();
+			$shortcode  = do_shortcode( '[latest-posts number="-1" category="' . get_queried_object()->slug . '"]' );
+			$categories = [];
+
+			Main::get_template_part( 'Type/Blog.php', [
+				'title'      => $title,
+				'categories' => [],
+				'grid'       => $shortcode,
+			] );
+		}
 	}
 
 	public function get_formatted_terms( $categories ) {

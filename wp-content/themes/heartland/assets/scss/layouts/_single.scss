@@ -1,6 +1,7 @@
 .single,
 .page,
-.blog {
+.blog,
+.archive {
 	main.main {
 		@include padding('bottom', 'large');
 	}
