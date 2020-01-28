@@ -1,0 +1,22 @@
+.wp-block-group #mc_embed_signup {
+	input.email {
+		@include text;
+		color: $lightgray;
+		padding: rem(15);
+		height: auto;
+		border: rem(2) solid $white;
+		border-radius: 0;
+	}
+
+	.button {
+		@include text;
+		color: $white;
+		background-color: $green;
+		text-transform: uppercase;
+		padding: rem(15) rem(37);
+		border-radius: 0;
+		border: rem(2) solid $white;
+		height: auto;
+		margin-left: rem(10);
+	}
+}

@@ -34,12 +34,15 @@ header.header {
 
 	.menu {
 		@include flex;
+		position: relative;
 	}
 
 	.menu-item {
 		@include padding('left', 'normal');
+		@include padding('top-bottom', 'normal');
+		position: relative;
 
-		&:last-child {
+		&.button {
 			@include button('small');
 			@include margin('left', 'normal');
 		}
@@ -47,6 +50,34 @@ header.header {
 		a {
 			@include text;
 			color: $white;
+		}
+	}
+
+	.sub-menu {
+		position: absolute;
+		z-index: 10;
+		top: rem(60);
+		left: rem(10);
+		background-color: $black;
+		padding: rem(15) rem(25);
+		width: max-content;
+		display: none;
+
+		.menu-item {
+			padding: 0;
+			margin-bottom: rem(5);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.menu-item-has-children {
+		&:hover {
+			.sub-menu {
+				display: block;
+			}
 		}
 	}
 }
