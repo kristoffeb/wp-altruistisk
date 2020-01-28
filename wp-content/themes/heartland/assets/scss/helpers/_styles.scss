@@ -191,4 +191,8 @@
 	@if ($color == 'green') {
 		background-color: $green;
 	}
+
+	@if ($color == 'mediumgray') {
+		background-color: $mediumgray;
+	}
 }

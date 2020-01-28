@@ -1,7 +1,7 @@
 .latest-posts {
 	.content {
 		@include flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
 		@include padding('bottom', 'large');
 	}

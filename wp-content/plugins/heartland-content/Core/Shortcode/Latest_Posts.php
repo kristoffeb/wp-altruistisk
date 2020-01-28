@@ -55,7 +55,7 @@ class Latest_Posts {
 				'excerpt'      => get_the_excerpt( $post->ID ),
 				'image'        => get_the_post_thumbnail_url( $post->ID, 'grid-normal' ),
 				'category'     => $this->get_category( $post->ID ),
-				'date'         => get_the_date( get_option( 'date_format' ), $post->ID ),
+				'date'         => $this->get_date( $post->ID ),
 			];
 
 		}
@@ -63,7 +63,7 @@ class Latest_Posts {
 		return $content;
 	}
 
-	public function get_category( $post_id ) {
+	public static function get_category( $post_id ) {
 		$categories = get_the_category( $post_id );
 
 		$category_list = '';
@@ -79,5 +79,9 @@ class Latest_Posts {
 		$category_list = sprintf( '<ul class="categories">%s</ul>', $category_list );
 
 		return $category_list;
+	}
+
+	public static function get_date( $post_id ) {
+		return get_the_date( get_option( 'date_format' ), $post_id );
 	}
 }

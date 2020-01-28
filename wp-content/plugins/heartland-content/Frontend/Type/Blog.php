@@ -21,10 +21,29 @@ class Blog implements Page {
 	}
 
 	public function grid() {
-		$shortcode = do_shortcode( '[latest-posts number="-1"]' );
+		$title      = get_the_title( get_option( 'page_for_posts' ) );
+		$shortcode  = do_shortcode( '[latest-posts number="-1"]' );
+		$categories = get_categories();
 
-		$grid = sprintf( '<div class="inner-grid">%s</div>', $shortcode );
 
-		echo $grid;
+		Main::get_template_part( 'Type/Blog.php', [
+			'title'      => $title,
+			'categories' => $this->get_formatted_terms( $categories ),
+			'grid'       => $shortcode,
+		] );
+	}
+
+	public function get_formatted_terms( $categories ) {
+		$terms = [];
+
+		foreach ( $categories as $term ) {
+			$terms[] = [
+				'id'        => $term->term_id,
+				'name'      => $term->name,
+				'permalink' => get_category_link( $term->term_id ),
+			];
+		}
+
+		return $terms;
 	}
 }

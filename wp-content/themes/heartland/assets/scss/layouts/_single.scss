@@ -1,7 +1,7 @@
 .single,
-.page {
+.page,
+.blog {
 	main.main {
-		// padding-top: rem(125);
 		@include padding('bottom', 'large');
 	}
 
@@ -25,6 +25,35 @@
 		&, iframe {
 			max-height: rem(380);
 			overflow: hidden;
+		}
+	}
+}
+
+.single {
+	.meta {
+		@include grid;
+		padding-left: rem(190);
+		padding-right: rem(190);
+		@include padding('top');
+	}
+
+	.meta {
+		&, * {
+			@include text('small');
+			color: $warmgray;
+		}
+
+		ul {
+			display: inline-block;
+		}
+
+		.date {
+			display: inline-block;
+
+			&:before {
+				content: '\2022';
+				margin: 0 rem(6);
+			}
 		}
 	}
 }

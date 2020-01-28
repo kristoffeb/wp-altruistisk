@@ -1,0 +1,28 @@
+.blog {
+	.list-categories {
+		@include padding('bottom', 'large');
+		@include margin('bottom');
+
+		ul {
+			justify-content: flex-start;
+		}
+
+		li {
+			width: auto;
+			margin: 0 rem(5);
+
+			a {
+				@include button('small', 'mediumgray');
+				display: block;
+				text-align: center;
+				text-transform: lowercase;
+			}
+		}
+	}
+
+	.latest-posts {
+		.post {
+			@include margin('bottom', 'large');
+		}
+	}
+}
