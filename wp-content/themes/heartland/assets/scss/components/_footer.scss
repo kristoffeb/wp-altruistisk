@@ -66,5 +66,45 @@ footer.footer {
 				@include margin('left', 'normal');
 			}
 		}
+
+		&:nth-child(6) {
+			width: 100%;
+
+			.menu {
+				display: flex;
+				justify-content: center;
+			}
+
+			.menu-item {
+				a {
+					font-size: 0;
+					color: $black;
+
+					&:before {
+						font-size: rem(20);
+					}
+				}
+
+				&.facebook a {
+					@include icons( $symbol: '\F09A', $margin: '0 4px' );
+				}
+
+				&.instagram a {
+					@include icons( $symbol: '\F16D', $margin: '0 4px' );
+				}
+
+				&.twitter a {
+					@include icons( $symbol: '\F099', $margin: '0 4px' );
+				}
+
+				&.spotify a {
+					@include icons( $symbol: '\F1BC', $margin: '0 4px' );
+				}
+
+				&.youtube a {
+					@include icons( $symbol: '\F16A', $margin: '0 4px' );
+				}
+			}
+		}
 	}
 }
