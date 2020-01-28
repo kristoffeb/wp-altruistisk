@@ -14,7 +14,7 @@
 	}
 
 	.wp-block-cover {
-		min-height: 90vh;
+		min-height: calc(90vh - #{rem(125)});
 
 		&__inner-container {
 			align-self: flex-end;

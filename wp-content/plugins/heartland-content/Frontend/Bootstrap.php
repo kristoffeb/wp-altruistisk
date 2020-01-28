@@ -15,20 +15,13 @@ class Bootstrap {
 	 * Run core bootstrap hooks.
 	 */
 	public function init() {
-		// Global
-		// new Component\Header();
-		// new Component\Footer();
-
-		// add_action( 'wp', [ $this, 'load_pages' ], 10 );
+		add_action( 'wp', [ $this, 'load_pages' ], 10 );
 	}
 
 	public function load_pages() {
 		$page_rendering_classes = [
-			// Type\About::class,
-			// Type\Blog::class,
-			// Type\Frontpage::class,
-			// Type\Post::class,
-			// Type\Single::class,
+			Type\Blog::class,
+			Type\Post::class,
 		];
 		$this->load_matching_page_class( $page_rendering_classes );
 	}

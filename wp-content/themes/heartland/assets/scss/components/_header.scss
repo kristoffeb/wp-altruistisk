@@ -2,7 +2,13 @@ header.header {
 	background-color: $green;
 	width: 100%;
 	position: fixed;
+	top: 0;
 	z-index: 99;
+	height: rem(125);
+
+	.admin-bar & {
+		top: rem(32);
+	}
 
 	.inner-grid {
 		@include padding('top-bottom', 'normal');

@@ -2,7 +2,7 @@
 use Heartland\Content\Main;
 ?>
 
-<section class="categories">
+<section class="list-categories">
 
 	<div class="content">
 
