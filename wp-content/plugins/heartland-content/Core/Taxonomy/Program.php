@@ -20,7 +20,10 @@ class Program {
 				'label'             => __( 'Program Category', Main::TEXT_DOMAIN ),
 				'rewrite'           => [ 'slug' => 'program' ],
 				'hierarchical'      => TRUE,
+				'query_var'         => TRUE,
 				'show_admin_column' => TRUE,
+				'show_ui'           => TRUE,
+				'show_in_rest'      => TRUE,
 			]
 		);
 	}

@@ -14,6 +14,7 @@
 		"wpackagist-plugin/menu-image": "2.9.*",
 		"wpackagist-plugin/regenerate-thumbnails": "3.1.*",
 		"wpackagist-plugin/redirection": "4.6.*",
+		"wpackagist-plugin/simple-custom-post-order": "2.4.*",
 		"wpackagist-plugin/wordpress-seo": "12.9.*"
 	},
 	"require-dev": {

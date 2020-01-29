@@ -22,7 +22,7 @@ class Artist {
 				'slug'           => __( 'artist', Main::TEXT_DOMAIN ),
 			],
 			[
-				'supports'          => [ 'title', 'editor', 'thumbnail' ],
+				'supports'          => [ 'title', 'editor', 'thumbnail', 'page-attributes' ],
 				'menu_icon'         => 'dashicons-megaphone',
 				'public'            => TRUE,
 				'has_archive'       => TRUE,
