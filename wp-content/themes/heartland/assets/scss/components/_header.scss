@@ -6,8 +6,16 @@ header.header {
 	z-index: 99;
 	height: rem(125);
 
+	@include media($mobile) {
+		height: auto;
+	}
+
 	.admin-bar & {
 		top: rem(32);
+
+		@include media($mobile) {
+			top: rem(46);
+		}
 	}
 
 	.inner-grid {
@@ -27,6 +35,16 @@ header.header {
 		a {
 			text-decoration: none;
 		}
+
+		@include media($mobile) {
+			.wp-custom-header {
+				height: rem(26);
+			}
+
+			img {
+				max-width: rem(110);
+			}
+		}
 	}
 
 	.description {
@@ -38,6 +56,10 @@ header.header {
 	.menu {
 		@include flex;
 		position: relative;
+
+		@include media($mobile) {
+			display: none;
+		}
 	}
 
 	.menu-item {

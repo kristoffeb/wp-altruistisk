@@ -15,6 +15,12 @@ footer.footer {
 		&:nth-child(1) {
 			width: 50%;
 			@include margin('bottom');
+
+			@include media($mobile) {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 0;
+			}
 		}
 
 		&:nth-child(2) {
@@ -27,6 +33,16 @@ footer.footer {
 				@include title('large');
 				font-size: rem(40);
 			}
+
+			@include media($mobile) {
+				width: 100%;
+				text-align: center;
+
+				p {
+					@include title;
+					margin-bottom: 0;
+				}
+			}
 		}
 
 		&:nth-child(3) {
@@ -36,6 +52,15 @@ footer.footer {
 				color: $black;
 				@include text('small');
 				text-decoration: underline;
+			}
+
+			@include media($mobile) {
+				width: 45%;
+				@include margin('bottom', 'large');
+
+				li {
+					line-height: rem(18)
+				}
 			}
 		}
 
@@ -51,24 +76,30 @@ footer.footer {
 				@include text('small');
 				text-decoration: underline;
 			}
+
+			@include media($mobile) {
+				width: 45%;
+				@include margin('bottom', 'large');
+			}
 		}
 
 		&:nth-child(5) {
 			width: 60%;
 			text-align: right;
 
-			.menu {
-				@include flex;
-				justify-content: flex-end;
-			}
-
-			li {
-				@include margin('left', 'normal');
+			@include media($mobile) {
+				width: 100%;
+				@include margin('bottom', 'large');
+				text-align: center;
 			}
 		}
 
 		&:nth-child(6) {
 			width: 100%;
+
+			@include media($mobile) {
+				width: 100%;
+			}
 
 			.menu {
 				display: flex;

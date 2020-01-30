@@ -6,6 +6,13 @@
 		height: auto;
 		border: rem(2) solid $white;
 		border-radius: 0;
+
+		@include media($mobile) {
+			padding: rem(8) rem(8) rem(5);
+			margin: 0 auto;
+			@include margin('bottom');
+			max-width: 80%;
+		}
 	}
 
 	.button {
@@ -18,5 +25,11 @@
 		border: rem(2) solid $white;
 		height: auto;
 		margin-left: rem(10);
+
+		@include media($mobile) {
+			padding: rem(8) rem(25) rem(5);
+			margin: 0 auto;
+			width: rem(180);
+		}
 	}
 }

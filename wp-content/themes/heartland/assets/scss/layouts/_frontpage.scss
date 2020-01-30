@@ -10,16 +10,25 @@
 		&__inner-container {
 			padding-left: 0;
 			padding-right: 0;
+
+			@include media($mobile) {
+				padding-left: rem(20);
+				padding-right: rem(20);
+			}
 		}
 	}
 
 	.wp-block-cover {
-		min-height: calc(90vh - #{rem(125)});
+		min-height: calc(80vh - #{rem(72)});
 
 		&__inner-container {
 			align-self: flex-end;
 			@include padding('bottom', 'large');
 			@include text('xlarge');
+
+			@include media($mobile) {
+				@include text('large');
+			}
 		}
 
 		.wp-block-button__link {

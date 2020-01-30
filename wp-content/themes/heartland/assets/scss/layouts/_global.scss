@@ -18,6 +18,10 @@ body {
 main.main {
     background-color: $white;
     margin-top: rem(125);
+
+    @include media($mobile) {
+        margin-top: rem(72);
+    }
 }
 
 a {
@@ -71,5 +75,11 @@ li {
 .show-mobile {
     @include media($mobile) {
         display: block;
+    }
+}
+
+#wpadminbar {
+    @include media($mobile) {
+        position: fixed;
     }
 }
