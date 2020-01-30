@@ -20,6 +20,11 @@ main.main {
     margin-top: rem(125);
 }
 
+a {
+    color: #74766C;
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4 {
     @include title;
 	@include padding('bottom', 'small');
@@ -31,7 +36,7 @@ p {
 }
 
 li {
-    @include text;
+    @include text('large');
 }
 
 .inner-grid,

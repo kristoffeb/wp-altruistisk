@@ -11,7 +11,7 @@
 
 		a {
 			@include button;
-			padding: rem(15);
+			padding: rem(15) rem(15) rem(10);
 			color: $white;
 			display: block;
 			text-align: center;

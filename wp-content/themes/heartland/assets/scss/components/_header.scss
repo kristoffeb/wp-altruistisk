@@ -23,12 +23,15 @@ header.header {
 			max-width: 100%;
 			height: auto;
 		}
+
+		a {
+			text-decoration: none;
+		}
 	}
 
 	.description {
 		@include text('small');
 		color: $pink;
-		margin-top: rem(6);
 		display: block;
 	}
 
@@ -50,6 +53,7 @@ header.header {
 		a {
 			@include text;
 			color: $white;
+			text-decoration: none;
 		}
 	}
 
@@ -65,7 +69,6 @@ header.header {
 
 		.menu-item {
 			padding: 0;
-			margin-bottom: rem(5);
 
 			&:last-child {
 				margin-bottom: 0;

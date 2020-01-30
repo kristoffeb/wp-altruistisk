@@ -163,23 +163,24 @@
 
 @mixin button($size: 'normal', $color: 'pink') {
 	color: $white;
+	text-decoration: none;
 
 	@if ($size == 'small') {
 		font-size: rem(16);
-		padding: rem(8) rem(24);
+		padding: rem(8) rem(24) rem(4);
 		border-radius: rem(35);
 	}
 
 	@if ($size == 'normal') {
 		font-size: rem(20);
-		padding: rem(15) rem(28);
+		padding: rem(15) rem(28) rem(10);
 		border-radius: rem(35);
 		@include margin('bottom', 'small');
 	}
 
 	@if ($size == 'large') {
 		font-size: rem(40);
-		padding: rem(25) rem(60);
+		padding: rem(25) rem(60) rem(20);
 		border-radius: rem(70);
 		@include margin('bottom', 'normal');
 	}

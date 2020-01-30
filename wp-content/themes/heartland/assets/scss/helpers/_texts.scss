@@ -1,10 +1,11 @@
 @mixin title($size: 'normal') {
-	font-family: 'Heebo';
-	font-weight: 400;
+	font-family: 'Helvetica Neue LT';
+	font-weight: normal;
 	letter-spacing: 0.1rem;
 
 	@if ($size == 'small') {
 		font-size: rem(18);
+		line-height: rem(26);
 	}
 
 	@if ($size == 'normal') {
@@ -19,7 +20,7 @@
 }
 
 @mixin text($size: 'normal', $weight: 'normal') {
-	font-family: 'Heebo';
+	font-family: 'Helvetica Neue LT';
 	font-weight: 300;
 	letter-spacing: 0.08rem;
 
@@ -34,7 +35,12 @@
 	}
 
 	@if ($size == 'large') {
+		font-size: rem(20);
+		line-height: rem(34);
+	}
+
+	@if ($size == 'xlarge') {
 		font-size: rem(24);
-		line-height: rem(32);
+		line-height: rem(38);
 	}
 }

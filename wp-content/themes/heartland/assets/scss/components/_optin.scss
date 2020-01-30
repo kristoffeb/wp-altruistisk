@@ -2,7 +2,7 @@
 	input.email {
 		@include text;
 		color: $lightgray;
-		padding: rem(15);
+		padding: rem(15) rem(15) rem(10);
 		height: auto;
 		border: rem(2) solid $white;
 		border-radius: 0;
@@ -13,7 +13,7 @@
 		color: $white;
 		background-color: $green;
 		text-transform: uppercase;
-		padding: rem(15) rem(37);
+		padding: rem(15) rem(37) rem(10);
 		border-radius: 0;
 		border: rem(2) solid $white;
 		height: auto;

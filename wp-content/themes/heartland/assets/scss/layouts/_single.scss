@@ -2,8 +2,25 @@
 .page,
 .blog,
 .archive {
+	&, p {
+		@include text('large');
+	}
+
 	main.main {
 		@include padding('bottom', 'large');
+
+		ul {
+			@include padding('left');
+
+			li {
+				list-style-type: disc;
+			}
+		}
+
+		ol {
+			list-style: decimal;
+			@include padding('left');
+		}
 	}
 
 	.wp-block-group {
@@ -19,6 +36,14 @@
 			font-size: rem(65);
 			@include padding('top', 'large');
 			text-align: center;
+		}
+	}
+
+	.wp-block-image {
+		margin-bottom: rem(16);
+
+		figcaption {
+			@include text('small');
 		}
 	}
 

@@ -19,7 +19,7 @@
 		&__inner-container {
 			align-self: flex-end;
 			@include padding('bottom', 'large');
-			@include text('large');
+			@include text('xlarge');
 		}
 
 		.wp-block-button__link {
