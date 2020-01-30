@@ -2,6 +2,11 @@
 	width: $grid-width;
 	margin-left: - rem(190);
 
+	@include media($mobile) {
+		width: 100%;
+		margin-left: 0;
+	}
+
 	.content {
 		@include flex;
 		align-items: flex-start;
@@ -11,6 +16,10 @@
 
 	.post {
 		width: 30%;
+
+		@include media($mobile) {
+			width: 45%;
+		}
 	}
 
 	.featured-image {

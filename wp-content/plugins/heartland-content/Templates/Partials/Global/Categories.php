@@ -6,9 +6,9 @@ use Heartland\Content\Main;
 
 	<div class="content">
 
-		<ul>
+		<ul class="categories">
 			<?php foreach ( $categories as $term ) : ?>
-				<li>
+				<li class="term">
 					<a href="<?php echo get_site_url() . '/' . $term['slug']; ?>"><?php echo $term['name']; ?></a>
 				</li>
 			<?php endforeach; ?>

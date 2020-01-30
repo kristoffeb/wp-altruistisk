@@ -27,6 +27,11 @@
 		&__inner-container {
 			padding-left: rem(190);
 			padding-right: rem(190);
+
+			@include media($mobile) {
+				padding-left: rem(20);
+				padding-right: rem(20);
+			}
 		}
 	}
 
@@ -36,6 +41,10 @@
 			font-size: rem(65);
 			@include padding('top', 'large');
 			text-align: center;
+
+			@include media($mobile) {
+				font-size: rem(45);
+			}
 		}
 	}
 
@@ -61,6 +70,11 @@
 		padding-left: rem(190);
 		padding-right: rem(190);
 		@include padding('top');
+
+		@include media($mobile) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	.meta {

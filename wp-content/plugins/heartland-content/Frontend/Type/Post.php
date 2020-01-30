@@ -26,7 +26,7 @@ class Post implements Page {
 	public function post_meta() {
 		global $post;
 
-		if ( ! is_single() ) {
+		if ( ! is_single() || 'post' != get_post_type() ) {
 			return;
 		}
 

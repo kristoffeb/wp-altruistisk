@@ -1,21 +1,23 @@
 .blog {
-	.list-categories {
-		@include padding('bottom', 'large');
-		@include margin('bottom');
+	main.main {
+		.list-categories {
+			@include padding('bottom', 'large');
+			@include margin('bottom');
 
-		ul {
-			justify-content: flex-start;
-		}
+			ul.categories {
+				justify-content: flex-start;
+			}
 
-		li {
-			width: auto;
-			margin: 0 rem(5);
+			li.term {
+				width: auto;
+				margin: 0 rem(5);
 
-			a {
-				@include button('small', 'mediumgray');
-				display: block;
-				text-align: center;
-				text-transform: lowercase;
+				a {
+					@include button('small', 'mediumgray');
+					display: block;
+					text-align: center;
+					text-transform: lowercase;
+				}
 			}
 		}
 	}

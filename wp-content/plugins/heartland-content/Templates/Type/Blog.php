@@ -6,9 +6,9 @@
 
 	<?php if ( ! empty( $categories ) ) : ?>
 		<div class="list-categories">
-			<ul>
+			<ul class="categories">
 				<?php foreach ( $categories as $term ) : ?>
-					<li>
+					<li class="term">
 						<a href="<?php echo $term['permalink']; ?>"><?php echo $term['name']; ?></a>
 					</li>
 				<?php endforeach; ?>
