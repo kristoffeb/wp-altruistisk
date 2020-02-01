@@ -22,7 +22,7 @@
 		@include media($mobile) {
 			width: 45%;
 
-			.page:not(.home) & {
+			.home & {
 				&:nth-last-child(n+3) {
 					display: none;
 				}

@@ -57,6 +57,16 @@ namespace Heartland;
 					?>
 				</nav>
 
+				<div class="back-menu">
+                    <a><?php _e( 'Back', THEMEDOMAIN ) ?></a>
+                </div>
+
+				<div class="mobile-menu">
+					<button class="burger">
+						<?php _e( 'Menu', THEMEDOMAIN ); ?>
+					</button>
+				</div>
+
 			<?php do_action( THEMEDOMAIN . '-after_main_nav' ); ?>
 
 		</div>

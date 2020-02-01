@@ -57,7 +57,7 @@
     }
 }
 
-@mixin icons($symbol, $set: 'social', $place: 'before', $color: '', $margin: '0 12px') {
+@mixin icons($symbol, $set: 'fontello', $place: 'before', $color: '', $margin: '0 12px') {
 	&::#{$place} {
 		font-family: $set;
 		content: $symbol;

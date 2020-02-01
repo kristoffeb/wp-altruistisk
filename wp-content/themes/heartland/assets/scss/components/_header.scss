@@ -37,6 +37,8 @@ header.header {
 		}
 
 		@include media($mobile) {
+			width: auto;
+
 			.wp-custom-header {
 				height: rem(26);
 			}
@@ -56,10 +58,6 @@ header.header {
 	.menu {
 		@include flex;
 		position: relative;
-
-		@include media($mobile) {
-			display: none;
-		}
 	}
 
 	.menu-item {
@@ -102,6 +100,135 @@ header.header {
 		&:hover {
 			.sub-menu {
 				display: block;
+			}
+		}
+	}
+
+	#main-nav {
+		@include media($tablet) {
+			display: none;
+		}
+
+		.menu-open & {
+			@include fill-container;
+			position: fixed;
+			left: auto;
+			width: 100%;
+			background-color: $white;
+			z-index: 98;
+			@include padding('top-bottom', 'large');
+			@include padding('left-right', 'large');
+
+			.menu {
+				flex-direction: column;
+				align-items: flex-start;
+
+				> .menu-item:last-child {
+					@include button;
+					margin: 0;
+					@include margin('top', 'small');
+				}
+			}
+
+			.menu-item {
+				@include margin('bottom', 'small');
+				padding: 0;
+				line-height: rem(24);
+
+				a {
+					color: $black;
+					border: none;
+					font-weight: 500;
+				}
+
+				&-has-children {
+					> a {
+						&:after {
+							content: '\00BB';
+							color: $mediumgray;
+							@include text;
+							font-weight: 500;
+							@include margin('left', 'small');
+						}
+					}
+				}
+			}
+
+			.sub-menu {
+				position: relative;
+				top: auto;
+				left: auto;
+				background-color: inherit;
+				padding: 0;
+			}
+		}
+
+		.drawer-open & {
+			.menu > .menu-item {
+				display: none;
+
+				&.open {
+					display: block;
+
+					> a {
+						display: none;
+					}
+
+					.sub-menu {
+						display: block;
+						padding-top: rem(40);
+					}
+				}
+			}
+		}
+	}
+
+	.mobile-menu {
+		display: none;
+
+		@include media($tablet) {
+			display: block;
+			z-index: 99;
+
+			.burger {
+				@include icons( $symbol: '\E801', $margin: '0px' );
+				font-size: 0;
+				color: $pink;
+
+				&:before {
+					font-size: 2rem;
+				}
+
+				.menu-open & {
+					@include icons( $symbol: '\E800', $margin: '0px' );
+					color: $black;
+				}
+			}
+		}
+	}
+
+	.back-menu {
+		display: none;
+
+		.drawer-open & {
+			display: block;
+			z-index: 99;
+			position: fixed;
+			top: 0;
+			left: 0;
+			@include padding('top', 'large');
+			@include padding('left', 'large');
+
+			a {
+				@include text;
+				font-weight: 500;
+				color: $mediumgray;
+				text-decoration: none;
+
+				&:before {
+					content: '\00AB';
+					@include margin('right', 'small');
+				}
 			}
 		}
 	}
