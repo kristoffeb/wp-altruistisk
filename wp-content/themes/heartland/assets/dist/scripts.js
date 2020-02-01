@@ -18,10 +18,12 @@ jQuery( window ).on( 'load', function( $ ) {
 		var body = $('body');
 
 		$('> .menu-item-has-children > a', menu).click(function(e) {
-	        e.preventDefault();
+	        if (body.hasClass('menu-open')) {
+				e.preventDefault();
 
-	        body.addClass('drawer-open');
-	        $(this).parent().addClass('open');
+		        body.addClass('drawer-open');
+		        $(this).parent().addClass('open');
+			}
 	    });
 
 	    $('.back-menu a').click(function(e) {

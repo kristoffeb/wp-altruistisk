@@ -66,8 +66,15 @@ header.header {
 		position: relative;
 
 		&.button {
-			@include button('small');
-			@include margin('left', 'normal');
+			padding-top: 0;
+			padding-bottom: 0;
+
+			a {
+				display: block;
+				@include button('small');
+				line-height: rem(34);
+				height: rem(46);
+			}
 		}
 
 		a {

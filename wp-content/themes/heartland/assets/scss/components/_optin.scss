@@ -13,6 +13,10 @@
 			@include margin('bottom');
 			max-width: 80%;
 		}
+
+		&:focus {
+			color: $black;
+		}
 	}
 
 	.button {
