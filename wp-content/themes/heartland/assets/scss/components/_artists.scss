@@ -12,6 +12,11 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		@include padding('top-bottom', 'large');
+
+		&::after {
+			content: '';
+			width: 30%;
+		}
 	}
 
 	.post {
