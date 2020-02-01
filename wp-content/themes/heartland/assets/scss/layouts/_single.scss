@@ -48,6 +48,12 @@
 		}
 	}
 
+	.wp-block-column {
+		.wp-block-button .wp-block-button__link {
+			@include button('small', 'green');
+		}
+	}
+
 	.wp-block-image {
 		margin-bottom: rem(16);
 
