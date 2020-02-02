@@ -1,0 +1,36 @@
+.pagination {
+	@include grid;
+	text-align: center;
+
+	.page-numbers {
+		@include flex;
+		justify-content: center;
+
+		li {
+			@include padding('left-right', 'small');
+			list-style-type: none;
+		}
+
+		.paged main.main &,
+		.blog main.main &,
+		.archive main.main &, {
+			padding-left: 0;
+
+			li {
+				list-style-type: none;
+			}
+		}
+	}
+
+	li, a {
+		text-decoration: none;
+		color: $mediumgray;
+		@include title('small');
+		font-weight: 500;
+	}
+
+	.current {
+		font-weight: 500;
+		color: $black;
+	}
+}

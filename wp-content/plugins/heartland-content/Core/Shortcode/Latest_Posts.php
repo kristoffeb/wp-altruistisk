@@ -35,11 +35,14 @@ class Latest_Posts {
 
 	public function get_posts( $limit, $category ) {
 
+		$paged = intval( get_query_var( 'paged' ) );
+
 		$args = [
 			'posts_per_page' => $limit,
 			'post_type'      => 'post',
 			'orderby'        => 'date',
 			'order'          => 'DESC',
+			'paged'          => $paged,
 		];
 
 		if ( ! empty( $category ) ) {

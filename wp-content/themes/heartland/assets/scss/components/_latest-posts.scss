@@ -19,6 +19,11 @@
 	.post {
 		width: 30%;
 
+		.blog &,
+		.archive & {
+			@include margin('bottom', 'large');
+		}
+
 		@include media($mobile) {
 			width: 45%;
 
@@ -26,6 +31,11 @@
 				&:nth-last-child(n+3) {
 					display: none;
 				}
+			}
+
+			.blog &,
+			.archive & {
+				width: 100%;
 			}
 		}
 	}

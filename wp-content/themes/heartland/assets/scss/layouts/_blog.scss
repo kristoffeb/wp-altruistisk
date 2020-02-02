@@ -21,10 +21,4 @@
 			}
 		}
 	}
-
-	.latest-posts {
-		.post {
-			@include margin('bottom', 'large');
-		}
-	}
 }

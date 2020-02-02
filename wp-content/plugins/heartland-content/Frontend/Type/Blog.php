@@ -28,6 +28,7 @@ class Blog implements Page {
 				'title'      => $title,
 				'categories' => $this->get_formatted_terms( $categories ),
 				'grid'       => $shortcode,
+				'pagination' => $this->get_pagination(),
 			] );
 		}
 
@@ -40,6 +41,7 @@ class Blog implements Page {
 				'title'      => $title,
 				'categories' => [],
 				'grid'       => $shortcode,
+				'pagination' => $this->get_pagination(),
 			] );
 		}
 	}
@@ -56,5 +58,19 @@ class Blog implements Page {
 		}
 
 		return $terms;
+	}
+
+	public function get_pagination() {
+		$args = [
+			'type'      => 'list',
+			'prev_text' => __( '<', Main::TEXT_DOMAIN ),
+			'next_text' => __( '>', Main::TEXT_DOMAIN ),
+		];
+
+		$list = paginate_links( $args );
+
+		$pagination = sprintf( '<div class="pagination">%s</div>', $list );
+
+		return $pagination;
 	}
 }

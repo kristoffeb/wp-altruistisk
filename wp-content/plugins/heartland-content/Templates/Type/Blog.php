@@ -17,4 +17,6 @@
 	<?php endif; ?>
 
 	<?php echo $grid; ?>
+
+	<?php echo $pagination; ?>
 </div>
