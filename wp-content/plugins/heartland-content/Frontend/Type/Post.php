@@ -19,6 +19,11 @@ class Post implements Page {
 	public function content() {
 		while ( have_posts() ) {
 			the_post();
+
+			if ( is_single() && 'post' === get_post_type() ) {
+				echo sprintf( '<h2>%s</h2>', get_the_title() );
+			}
+
 			the_content();
 		}
 	}

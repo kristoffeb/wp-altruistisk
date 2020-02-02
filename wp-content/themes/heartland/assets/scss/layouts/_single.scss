@@ -70,35 +70,55 @@
 	}
 }
 
-.single {
-	.meta {
-		@include grid;
-		padding-left: rem(190);
-		padding-right: rem(190);
-		@include padding('top');
-
-		@include media($mobile) {
-			padding-left: 0;
-			padding-right: 0;
-		}
+.single-post {
+	.main-content {
+		background-color: $white;
 	}
 
-	.meta {
-		&, * {
-			@include text('small');
-			color: $warmgray;
+	main.main {
+		@include grid;
+		margin-top: rem(125);
+		padding-left: rem(190);
+		padding-right: rem(190);
+
+		@include media($mobile) {
+			padding-left: rem(20);
+			padding-right: rem(20);
 		}
 
-		ul {
-			display: inline-block;
+		figure,
+		img {
+			max-width: 100%;
 		}
 
-		.date {
-			display: inline-block;
+		.meta {
+			@include grid;
+			@include padding('top');
 
-			&:before {
-				content: '\2022';
-				margin: 0 rem(6);
+			&, * {
+				@include text('small');
+				color: $warmgray;
+			}
+
+			ul {
+				display: inline-block;
+			}
+
+			li {
+				list-style-type: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.date {
+				display: inline-block;
+
+				&:before {
+					content: '\2022';
+					margin: 0 rem(6);
+				}
 			}
 		}
 	}

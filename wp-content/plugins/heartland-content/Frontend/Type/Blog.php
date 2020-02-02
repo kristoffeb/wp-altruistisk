@@ -21,7 +21,7 @@ class Blog implements Page {
 
 		if ( is_home() ) {
 			$title      = get_the_title( get_option( 'page_for_posts' ) );
-			$shortcode  = do_shortcode( '[latest-posts number="-1"]' );
+			$shortcode  = do_shortcode( '[latest-posts number="' . get_option( 'posts_per_page' ) . '"]' );
 			$categories = get_categories();
 
 			Main::get_template_part( 'Type/Blog.php', [
@@ -33,7 +33,7 @@ class Blog implements Page {
 
 		if ( is_archive() ) {
 			$title      = get_the_archive_title();
-			$shortcode  = do_shortcode( '[latest-posts number="-1" category="' . get_queried_object()->slug . '"]' );
+			$shortcode  = do_shortcode( '[latest-posts number="' . get_option( 'posts_per_page' ) . '" category="' . get_queried_object()->slug . '"]' );
 			$categories = [];
 
 			Main::get_template_part( 'Type/Blog.php', [

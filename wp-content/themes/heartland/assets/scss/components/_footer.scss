@@ -48,6 +48,10 @@ footer.footer {
 		&:nth-child(3) {
 			width: 20%;
 
+			li {
+				line-height: normal;
+			}
+
 			a {
 				color: $black;
 				@include text('small');

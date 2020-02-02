@@ -38,6 +38,8 @@ class Latest_Posts {
 		$args = [
 			'posts_per_page' => $limit,
 			'post_type'      => 'post',
+			'orderby'        => 'date',
+			'order'          => 'DESC',
 		];
 
 		if ( ! empty( $category ) ) {
