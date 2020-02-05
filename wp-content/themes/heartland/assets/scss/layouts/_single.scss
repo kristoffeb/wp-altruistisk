@@ -4,6 +4,10 @@
 .archive {
 	&, p {
 		@include text('large');
+
+		&.has-small-font-size {
+			@include text;
+		}
 	}
 
 	main.main {
@@ -40,7 +44,6 @@
 			@include title('large');
 			font-size: rem(65);
 			@include padding('top', 'large');
-			text-align: center;
 
 			@include media($mobile) {
 				font-size: rem(40);

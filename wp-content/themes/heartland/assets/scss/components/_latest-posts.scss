@@ -20,7 +20,8 @@
 		width: 30%;
 
 		.blog &,
-		.archive & {
+		.archive &,
+		.page-futuretalks & {
 			@include margin('bottom', 'large');
 		}
 
