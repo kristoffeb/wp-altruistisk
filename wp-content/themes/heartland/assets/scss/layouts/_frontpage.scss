@@ -8,8 +8,13 @@
 		@include padding('top-bottom', 'xlarge');
 
 		&__inner-container {
-			padding-left: 0;
-			padding-right: 0;
+			padding-left: rem(40);
+			padding-right: rem(40);
+
+			@include media($desktop) {
+				padding-left: 0;
+				padding-right: 0;
+			}
 
 			@include media($mobile) {
 				padding-left: rem(20);

@@ -48,8 +48,14 @@
 
 @mixin grid() {
     position: relative;
-    max-width: $grid-width;
+    max-width: 100%;
+    padding: 0 rem(40);
     margin: 0 auto;
+
+    @include media($desktop) {
+        max-width: $grid-width;
+        padding: 0;
+    }
 
     @include media($tablet) {
         max-width: 100%;

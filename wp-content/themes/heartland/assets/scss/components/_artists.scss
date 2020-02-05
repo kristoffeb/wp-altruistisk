@@ -1,6 +1,9 @@
 .artists {
-	width: $grid-width;
-	margin-left: - rem(190);
+
+	@include media($desktop) {
+		width: $grid-width;
+		margin-left: - rem(190);
+	}
 
 	@include media($mobile) {
 		width: 100%;
