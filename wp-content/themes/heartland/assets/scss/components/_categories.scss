@@ -21,6 +21,10 @@
 				text-align: center;
 			}
 
+			&.active a {
+				color: $black;
+			}
+
 			@include media($mobile) {
 				width: 47%;
 				@include margin('bottom');

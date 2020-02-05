@@ -8,7 +8,7 @@ use Heartland\Content\Main;
 
 		<ul class="categories">
 			<?php foreach ( $categories as $term ) : ?>
-				<li class="term">
+				<li class="term <?php echo ( $term['slug'] === get_post_field( 'post_name' ) ? 'active' : '' ); ?>">
 					<a href="<?php echo get_site_url() . '/' . $term['slug']; ?>"><?php echo $term['name']; ?></a>
 				</li>
 			<?php endforeach; ?>
