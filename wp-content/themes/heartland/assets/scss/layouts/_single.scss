@@ -76,18 +76,22 @@
 .single-post {
 	.main-content {
 		background-color: $white;
+
+		main.main {
+			padding-left: rem(190);
+			padding-right: rem(190);
+
+			@include media($mobile) {
+				margin-top: 0;
+				padding-left: rem(20);
+				padding-right: rem(20);
+			}
+		}
 	}
 
 	main.main {
 		@include grid;
 		margin-top: rem(125);
-		padding-left: rem(190);
-		padding-right: rem(190);
-
-		@include media($mobile) {
-			padding-left: rem(20);
-			padding-right: rem(20);
-		}
 
 		figure,
 		img {

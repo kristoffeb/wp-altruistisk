@@ -45,7 +45,7 @@ function theme_setup() {
 
 	// Image sizes
 	set_post_thumbnail_size( 125, 125, true ); // default thumb size
-	add_image_size( 'grid-normal', 350, 350, true );
+	add_image_size( 'grid-normal', 500, 500, true );
 
 	// Navigation
 	register_nav_menus(	array(
