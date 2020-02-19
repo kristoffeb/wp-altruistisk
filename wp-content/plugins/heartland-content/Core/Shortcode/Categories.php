@@ -13,9 +13,11 @@ class Categories {
 
 	public function shortcode( $atts = [], $content = NULL, $tag = '' ) {
 
-		$atts = shortcode_atts( [], $atts, $tag );
+		$atts = shortcode_atts( [
+			'number' => '5',
+		], $atts, $tag );
 
-		$terms = $this->get_categories();
+		$terms = $this->get_categories( $atts['number'] );
 
 		ob_start();
 
@@ -30,11 +32,12 @@ class Categories {
 		return $content;
 	}
 
-	public function get_categories() {
+	public function get_categories( $limit ) {
 		$terms = get_terms( [
 			'taxonomy'   => Taxonomy\Program::TAXONOMY,
+			'exclude'    => [ '58' ],
 			'hide_empty' => false,
-			'orderby'    => 'date',
+			// 'number'     => $limit,
 		] );
 
 		return $terms;
