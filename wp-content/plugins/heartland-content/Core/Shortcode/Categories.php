@@ -35,9 +35,7 @@ class Categories {
 	public function get_categories( $limit ) {
 		$terms = get_terms( [
 			'taxonomy'   => Taxonomy\Program::TAXONOMY,
-			'exclude'    => [ '58' ],
 			'hide_empty' => false,
-			// 'number'     => $limit,
 		] );
 
 		return $terms;
@@ -47,11 +45,13 @@ class Categories {
 		$sorted = [];
 
 		foreach( $terms as $term ) {
-			$sorted[] = [
-				'term_id' => $term->term_id,
-				'name'    => $term->name,
-				'slug'    => $term->slug,
-			];
+			if ( ! $term->parent ) {
+				$sorted[] = [
+					'term_id' => $term->term_id,
+					'name'    => $term->name,
+					'slug'    => $term->slug,
+				];
+			}
 		}
 
 		asort( $sorted );

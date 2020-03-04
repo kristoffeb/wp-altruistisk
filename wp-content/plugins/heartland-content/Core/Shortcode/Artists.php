@@ -40,9 +40,10 @@ class Artists {
 			'post_type'      => 'artist',
 			'tax_query'      => [
 				[
-		            'taxonomy' => Taxonomy\Program::TAXONOMY,
-		            'field'    => 'slug',
-		            'terms'    => $category,
+		            'taxonomy'         => Taxonomy\Program::TAXONOMY,
+		            'field'            => 'slug',
+		            'terms'            => $category,
+					'include_children' => FALSE,
 				],
 			],
         ];
