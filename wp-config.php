@@ -3,7 +3,7 @@
 
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp-heartland');
+define('DB_NAME', 'wp-altruistisk');
 
 /** MySQL database username */
 define('DB_USER', 'root');

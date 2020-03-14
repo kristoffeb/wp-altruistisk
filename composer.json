@@ -46,7 +46,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Heartland\\Content\\": "wp-content/plugins/heartland-content/"
+			"Altruistisk\\Content\\": "wp-content/plugins/altruistisk-content/"
 		}
 	}
 }

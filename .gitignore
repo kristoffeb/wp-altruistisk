@@ -6,9 +6,9 @@ wp-content/languages/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/plugins/*
-!wp-content/plugins/heartland*/
+!wp-content/plugins/altruistisk*/
 wp-content/themes/*
-!wp-content/themes/heartland*/
+!wp-content/themes/altruistisk*/
 !wp-content/mu-plugins/
 wp-config.php
 
@@ -24,6 +24,6 @@ Thumbs.db
 .idea/
 .tmp/
 
-wp-content/themes/heartland/.sass-cache
-wp-content/themes/heartland/bower_components
-wp-content/themes/heartland/node_modules
+wp-content/themes/altruistisk/.sass-cache
+wp-content/themes/altruistisk/bower_components
+wp-content/themes/altruistisk/node_modules
